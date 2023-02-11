@@ -1,0 +1,888 @@
+.upperSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.backgroundImage {
+  aspect-ratio: 3/1;
+}
+.backImage {
+  height: 100%;
+  width: 100%;
+}
+.teamLogoImages {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.tourneyCard {
+  margin-top: -250px;
+  background-color: #0b0f20;
+  border-radius: 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+  z-index: 10;
+  border: 0.5px solid #78787850;
+}
+.tourneyImage {
+  width: 20%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tourneyDetails {
+  width: 73%;
+  height: fit-content;
+  padding: 0 1rem;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.tourneyTitleAndInfo {
+  height: fit-content;
+  border-bottom: solid 1px #ffffff96;
+  padding: 0.5rem 0;
+}
+.tourneyTitleAndInfo h4 {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.tourneyTitleAndInfo h4 i,
+.tourneydetailpafeTitle section div i {
+  border: solid 1px #ffffff96;
+  display: grid;
+  place-items: center;
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 9px;
+  color: #ffffff96;
+  cursor: pointer;
+}
+.tourneyTitleAndInfo h6 {
+  font-size: 0.8rem;
+  margin: 0;
+  color: white;
+}
+.tourneyTitleAndInfo button,
+.mobilejoin {
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+  color: white;
+  padding: 0.5rem 2rem;
+  height: max-content;
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.tourneydetailpafeTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tourneyTitleAndInfo button i {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+}
+.tourneyTitleAndInfo .timing {
+  padding: 0 1rem;
+  height: max-content;
+  border-right: solid 1px #ffffff96;
+}
+.tourneyTitleAndInfo .timing p {
+  font-size: 0.8rem;
+}
+.tourneyDetails p {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0;
+}
+.tourneyPrizeAndDetails > div {
+  width: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.tourneyPrizeAndDetails > div > p {
+  color: #6578a8;
+}
+.tourneyPrizeAndDetails > div > span {
+  color: #c9d0e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+.tourneyPrizeAndDetails > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tourneyPrizeAndDetails > div > span > i,
+.tourneyPrizeAndDetails > div > p > i {
+  display: grid;
+  place-items: center;
+  margin-right: 0.5rem;
+}
+.tourneyPrizeAndDetails {
+  height: 65%;
+  padding-right: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.tourneyPrizeAndDetails div {
+  text-align: center;
+}
+.upperRow,
+.lowerRow {
+  display: flex;
+  justify-content: space-between;
+}
+.itrophy {
+  color: #f17303;
+}
+.iSpade {
+  color: #44de00;
+}
+.iPeople {
+  color: #c8291d;
+}
+.iCheck {
+  color: #73fbfd;
+}
+
+/* .bottomSection {
+  width: 95%;
+  margin: auto;
+} */
+
+.aboutTournament > h6 {
+  font-size: 30px;
+  margin: 1rem 1.5rem;
+  color: white;
+}
+.aboutTournament > div {
+  background: #0b0f20;
+  border-radius: 10px;
+  padding: 0.1rem 3rem;
+  margin-bottom: 2.5rem;
+  border: 0.5px solid #78787850;
+}
+.aboutTournament > div > p {
+  font-size: 0.9rem;
+  line-height: 2.5;
+  color: #ffffff;
+}
+.aboutTournament > div > p > i {
+  margin-right: 0.7rem;
+}
+.tournamentScheduleBox {
+  padding: 1.5rem 5rem;
+  background: #0b0f20;
+  font-weight: 200;
+  color: white;
+  border-radius: 10px;
+}
+.tournamentSchedule {
+  display: flex;
+  padding: 0.3rem 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  border-bottom: solid 1.5px #1f1f47;
+}
+.tournamentSchedule > div {
+  width: 50%;
+}
+.tournamentScheduleBox > h5 {
+  color: #1a77eb;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.tournamentScheduleBox > h5 > span {
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 100;
+}
+.tournamentSchedule h5 {
+  color: #1a77eb;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.Schedule > div,
+.roomInfo > div {
+  display: flex;
+  padding-bottom: 2.5rem;
+}
+
+.Schedule {
+  border-right: solid 1.5px #1f1f47;
+}
+.roomInfo {
+  padding-left: 2rem;
+}
+.boldIt {
+  font-weight: bold;
+  margin-right: 4rem;
+  width: 18rem;
+}
+
+.tableRow {
+  border-collapse: separate;
+  border-spacing: 0px 4px;
+}
+
+.Chatter {
+  color: white;
+}
+.selectRound {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.selectRound select {
+  margin-left: 0.5rem;
+  color: white;
+  background-color: #1b86ed;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.selectRound button,
+.SScore[type="button"]:enabled,
+.userInputText button {
+  background-color: #1b86ed;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.SScore[type="button"]:disabled {
+  background-color: transparent;
+  color: #cacaca;
+  border: 1px solid #cacaca;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.selectRound button:active,
+.userInputText button:active {
+  background-color: #0265c2;
+}
+.teamsAndMatchInfo {
+  border-radius: 5px;
+  background-color: #0b0f20;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sec1TNMinfo,
+.sec2TNMinfo,
+.sec3TNMinfo {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.sec1TNMinfo h2,
+.sec2TNMinfo h2,
+.sec3TNMinfo h2 {
+  margin: 0.5rem 0;
+}
+.sec1TNMinfo p,
+.sec2TNMinfo p,
+.sec3TNMinfo p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.sec1TNMinfo {
+  align-items: flex-start;
+}
+.sec2TNMinfo {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.sec2TNMinfo p {
+  font-size: 1rem;
+}
+.sec2TNMinfo p span {
+  color: #1b86ed;
+  margin-right: 0.5rem;
+}
+.sec3TNMinfo {
+  align-items: flex-end;
+}
+.sec1TNMinfo span,
+.sec3TNMinfo span {
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+.scoresWithTeamLogo {
+  display: flex;
+  justify-content: center;
+}
+.bChecked[type="button"]:enabled,
+.bChecked[type="button"]:disabled {
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+.bChecked[type="button"]:enabled {
+  cursor: pointer;
+  color: white;
+  background-color: #07bc0c;
+}
+.bChecked[type="button"]:disabled {
+  background-color: transparent;
+  color: #07bc0c;
+  border: 1px solid #07bc0c;
+}
+.apponentLogo {
+  position: relative;
+  width: 50px;
+  max-height: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sResult {
+  text-align: center;
+  margin: 0 1rem;
+}
+.sResult > p {
+  background-color: #07bc0c;
+  width: max-content;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin: 0.2rem auto;
+}
+.sResult span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sResult span p {
+  margin: 0 0.5rem;
+}
+.chatArea {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #0b0f20;
+}
+.chatsScrollBox {
+  position: relative;
+  height: 40vh;
+  max-height: 40vh;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+}
+.chats {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+.chatsScrollBox::-webkit-scrollbar {
+  display: none;
+}
+.userInputText input {
+  margin: 0;
+  margin-right: 0.5rem;
+  height: auto;
+}
+.userInputText form {
+  display: flex;
+}
+.message {
+  margin-bottom: 0.3rem;
+}
+.message h5 {
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.2rem 0;
+}
+.message h5 span {
+  font-size: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.prizeDist > div {
+  background-color: #0b0f20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+  border-radius: 5px;
+}
+.prizeDist > div > p {
+  width: 14%;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.prizeDist > div > p > span {
+  font-size: 2.5rem;
+}
+.position {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+.positio1 {
+  color: #faa644;
+}
+.positio2 {
+  color: #dfdfdf;
+}
+.positio3 {
+  color: #b6593c;
+}
+.positio4 {
+  color: #51e9cd;
+}
+.prizeHeader {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.inputButtons {
+  float: right;
+  padding: 10px;
+  /* width: 600px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dropDownDiv {
+  padding: 10px;
+}
+.dropDown {
+  border: 0;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(26, 91, 233, 1);
+  color: white;
+  border-radius: 3px;
+}
+.blueButton {
+  padding: 10px;
+  width: 100px;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(26, 91, 233, 1);
+}
+.blueButtonDiv {
+  padding: 10px;
+}
+.joinedTeamsBox {
+  margin-top: 25px;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #0b0f20;
+}
+.joinedTeamsBox header {
+  color: #1b86ed;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.joinedTeamsBox header p {
+  text-align: center;
+  width: 25%;
+}
+.JoinTeamRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.JoinTeamRow p {
+  margin: 0.5rem 0;
+  width: 25%;
+  text-align: center;
+}
+.JoinTeamRow p:nth-child(4) span {
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+}
+.chooseProof {
+  background-color: #1b86ed;
+  position: relative;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.chooseProof:active {
+  background-color: #0767c0;
+}
+.chooseProof input {
+  display: none;
+  background-color: #07bc0c;
+}
+@media screen and (max-width: 960px) {
+  .tourneydetailpafeTitle {
+    flex-direction: column;
+  }
+  .tourneyTitleAndInfo {
+    width: fit-content;
+    margin: auto;
+  }
+  .tourneyTitleAndInfo h4 {
+    margin-bottom: 0.5rem;
+  }
+  .tourneyPrizeAndDetails > div {
+    width: 33.3%;
+  }
+  .tourneyPrizeAndDetails {
+    padding-right: 0;
+  }
+  .tourneyDetails {
+    width: fit-content;
+    margin: auto;
+  }
+  .tourneyImage {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .tourneyCard {
+    flex-direction: column;
+    height: max-content;
+    padding: 1rem;
+    margin: -70px 10px 0 10px;
+  }
+  .aboutTournament,
+  .prizeDist,
+  .playerTable,
+  .tourSchedule,
+  .Chatter {
+    margin: 0 10px;
+  }
+  .tourneydetailpafeTitle {
+    flex-direction: column;
+  }
+  .tourneydetailpafeTitle > section {
+    margin-bottom: 0.7rem;
+  }
+  .tourneyTitleAndInfo h4 {
+    font-size: 1rem;
+  }
+  .tourneyPrizeAndDetails {
+    margin-top: 0.5rem;
+  }
+  .tourneyPrizeAndDetails > div {
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+  .tourneyDetails {
+    width: 100%;
+  }
+  .tourneyPrizeAndDetails {
+    padding-right: 0;
+  }
+  .tourneyPrizeAndDetails > div > span {
+    font-size: 1rem;
+  }
+  .tourneyImage {
+    width: 50%;
+    height: 10rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .tourneyImageflex {
+    display: flex;
+  }
+  .tourneyTitleAndInfo {
+    width: 50%;
+    margin: 0 0.3rem;
+    border: none;
+  }
+  .tourneyTitleAndInfo p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .tourneyTitleAndInfo h4 {
+    margin: 0.5rem 0;
+  }
+  .prizeDist > div {
+    padding: 0 1rem;
+  }
+  .prizeDist > div > p {
+    width: 20%;
+  }
+  .tournamentSchedule {
+    flex-direction: column;
+  }
+  .tournamentScheduleBox {
+    padding: 1rem 1.5rem;
+  }
+  .roomInfo {
+    padding: 0;
+  }
+  .tournamentSchedule > div {
+    width: 100%;
+  }
+  .Schedule {
+    border: none;
+  }
+  .boldIt {
+    margin-right: 1rem;
+  }
+  .tournamentScheduleBox > h5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tournamentScheduleBox > h5 > span {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+  .faqs {
+    display: flex;
+    line-height: 30px;
+  }
+  .faqs i {
+    margin-right: 0.5rem;
+  }
+  .tourneyTitleAndInfo .timing {
+    border: none;
+  }
+  .mobilejoin {
+    width: fit-content;
+    margin: auto;
+  }
+  .tourneydetailpafeTitle section div i {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .tourneydetailpafeTitle section div i svg {
+    font-size: 0.6rem;
+  }
+  .sec1TNMinfo h2,
+  .sec2TNMinfo h2,
+  .sec3TNMinfo h2 {
+    font-size: 1rem;
+  }
+  .bChecked[type="button"]:enabled,
+  .SScore[type="button"]:disabled,
+  .SScore[type="button"]:enabled,
+  .userInputText button,
+  .bChecked[type="button"]:disabled {
+    font-size: 0.8rem;
+  }
+  .sec1TNMinfo p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sec3TNMinfo p {
+    display: flex;
+    text-align: right;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .sec1TNMinfo span,
+  .sec3TNMinfo span {
+    margin: 0.3rem 0;
+    font-size: 0.8rem;
+  }
+  .sec2TNMinfo p {
+    font-size: 0.6rem;
+  }
+  .sec2TNMinfo p span {
+    margin: 0;
+  }
+  .sResult {
+    margin: 0;
+  }
+  .apponentLogo {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .tourneyTitleAndInfo h4 {
+    font-size: 0.8rem;
+  }
+  .tourneyTitleAndInfo .timing h6 {
+    font-size: 0.7rem;
+  }
+  .teamsAndMatchInfo {
+    flex-wrap: wrap;
+  }
+  .sec2TNMinfo {
+    order: +1;
+    margin: auto;
+  }
+  .Chatter h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  .joinedTeamsBox header p {
+    font-size: 0.8rem;
+    width: 25%;
+  }
+  .JoinTeamRow p {
+    font-size: 0.8rem;
+  }
+  .tournamentSchedule h5 {
+    font-size: 1.2rem;
+  }
+  .dropDown {
+    width: 70px;
+    height: 32px;
+  }
+  .tournamentSchedule p {
+    font-size: 0.9rem;
+  }
+  .tournamentScheduleBox > h5 > span {
+    margin: 0 0.3rem;
+  }
+  .mobiledialog,
+  .mobiledialog select {
+    font-size: 0.7rem;
+  }
+  .mobiledialog textarea {
+    width: 89%;
+  }
+  /* .boldIt {
+    margin-right: 2rem;
+    width: 15rem;
+  } */
+  .tournamentSchedule {
+    width: 100%;
+  }
+  .tournamentschedulevalue {
+    width: 160vw;
+  }
+  .prizeDist > div > p {
+    width: 10%;
+    margin: 0.5rem 0;
+    font-size: 0.5rem;
+  }
+  .prizeDist > div > p > span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 374px) {
+  .tourneyTitleAndInfo h4 {
+    font-size: 0.6rem;
+  }
+  .tourneyTitleAndInfo .timing h6 {
+    font-size: 0.7rem;
+  }
+  .sec1TNMinfo h2,
+  .sec2TNMinfo h2,
+  .sec3TNMinfo h2 {
+    font-size: 0.8rem;
+  }
+  .bChecked[type="button"]:enabled,
+  .SScore[type="button"]:disabled,
+  .SScore[type="button"]:enabled,
+  .userInputText button,
+  .bChecked[type="button"]:disabled {
+    font-size: 0.6rem;
+  }
+  .sec1TNMinfo span,
+  .sec3TNMinfo span {
+    font-size: 0.6rem;
+  }
+  .joinedTeamsBox header p {
+    font-size: 0.7rem;
+    width: 25%;
+  }
+  .JoinTeamRow p {
+    font-size: 0.7rem;
+  }
+  .tournamentSchedule p {
+    font-size: 0.7rem;
+  }
+  .tournamentScheduleBox > h5 > span {
+    margin: 0 0.3rem;
+    font-size: 0.7rem;
+  }
+  .tournamentSchedule {
+    width: 100%;
+  }
+  .mobiledialog textarea {
+    width: 85%;
+  }
+  .prizeDist > div > p {
+    width: 15%;
+    margin: 0.5rem 0;
+    font-size: 0.45rem;
+  }
+  .prizeDist > div > p > span {
+    font-size: 1rem;
+  }
+}
+.selectedTeamButton {
+  margin-top: 20px;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  border: 1px solid #171730;
+  outline: none;
+  border-radius: 2rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+.selectedTeamButtonPrimary {
+  margin-top: 20px;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  transition: 0.2s ease;
+  border: 1px solid #171730;
+  outline: none;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: #1b86ed;
+}

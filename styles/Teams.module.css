@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap");
+.teamsContainer {
+  /* margin: 25px; */
+  position: relative;
+}
+.teamsContainer > h1 {
+  color: white;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+.teamsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.teamsRow > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.teamsButton {
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.2rem;
+  margin-left: 0.5rem;
+  background-color: #1a54e9;
+}
+.teamsButton:active {
+  background-color: #0040e2;
+}
+.teamsText {
+  color: #7eb3d2;
+  font-size: 26px;
+  margin-top: 150px;
+}
+.teamsImages {
+  position: relative;
+}
+
+.arrow {
+  height: 400px;
+  width: 150px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+/* join team */
+.joinTeam {
+  background-color: #080d21;
+  border: 1px solid rgba(199, 199, 199, 0.48);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 40rem;
+  z-index: 10;
+}
+.joinTeam h2 {
+  margin: 0;
+  margin-bottom: 0.2rem;
+  color: white;
+}
+.joinTeam p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+}
+.joinTeam label {
+  color: white;
+}
+.joinTeam input {
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+.joinTeam button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+#joinNow {
+  background-color: #1a54e9;
+  color: white;
+}
+#joinNow:active {
+  background-color: #003bcf;
+}
+#joinCancel {
+  border: 1px solid rgba(93, 107, 136, 0.35);
+  background-color: transparent;
+  color: #5d6b88e3;
+}
+.joinSelection {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+/*  */
+
+/* pop up box*/
+.createTeamPopup {
+  /* max-width: 900px; */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  padding: 1rem 2.5rem;
+  display: flex;
+  background-image: linear-gradient(
+      76.72deg,
+      #0e0e1d 39.95%,
+      rgba(14, 14, 29, 0.939546) 59.91%,
+      rgba(14, 14, 29, 0.580208) 119.57%,
+      rgba(14, 14, 29, 0) 124.38%
+    ),
+    url("https://media.discordapp.net/attachments/928231120145879062/928231410773413908/well-damour-fortnite-jumbo_1.png?width=965&height=600");
+  background-size: cover;
+  border-radius: 10px;
+  /* display: none; */
+}
+.createTeamPopup > div {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.createTeamPopup h2 {
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.createTeamPopup i {
+  display: grid;
+  place-items: center;
+  margin-right: 0.5rem;
+}
+.createTeamPopup > div > label {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: white;
+}
+.createTeamPopup > div > select {
+  width: 100%;
+  background-color: transparent;
+  border: 1.5px solid #1b86ed;
+  border-radius: 0.3rem;
+  height: 45px;
+  background-color: #171730;
+  color: white;
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+.createTeamPopup button {
+  color: white;
+  outline: none;
+  border: none;
+  width: max-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 7px;
+  margin: 0.2rem 0.4rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+}
+.teamLogoBox {
+  display: flex;
+  flex-direction: column;
+}
+.teamLogoBox > i {
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  border: 1.5px solid #ffffff50;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 7%;
+  cursor: pointer;
+}
+.logoSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*  */
+
+/* accordian css start here */
+
+.innerbox {
+  color: white;
+  background-color: #0b0f20;
+  border-radius: 10px;
+  padding: 2.5rem;
+  border: 0.5px solid #78787850;
+}
+.acBox1 {
+  display: flex;
+  justify-content: space-between;
+}
+.tourneyTxt {
+  width: 60%;
+  margin: 0 1rem;
+  padding-left: 2rem;
+}
+.tourneyTxt button{
+  background-color: transparent;
+  border: solid 1px #1b86ed;
+  border-radius: 5px;
+  color: #1b86ed;
+  padding: .3rem .8rem;
+  cursor: pointer;
+}
+.tourneyTxt h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.acBox1 section {
+  display: flex;
+}
+.acBox1 section > div {
+  width: 7rem;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.acBox1 p {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.acBox1 i {
+  float: right;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 2rem;
+  background-color: #1b1f3473;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.acBox1 i svg {
+  font-size: 1.3rem;
+  color: #44547a;
+}
+.eh {
+  background-color: #1b1f3473;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.tourneyImage {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.headings {
+  font-size: 0.9rem;
+  background-color: #1b1f3473;
+  border-radius: 4px;
+  width: max-content;
+  padding: 0.4rem 1rem;
+  margin: 0;
+}
+.playerSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.playerSearch > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playerSearch > div > input {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0.3rem 1rem;
+  height: 2rem;
+  margin-right: 0.4rem;
+}
+.playerSearch > div > button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 10rem;
+  height: 2rem;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+}
+.teamPlayers {
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  gap: .7rem;
+  width: 100%;
+  margin-top: 10px;
+}
+.viewVutton {
+  color: white;
+  background-color: #1a54e9;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+.teamsListSection {
+  border-radius: 10px;
+  padding: 1.5rem 5rem;
+  border: 0.5px solid #78787850;
+  background-color: #0a0e1e;
+}
+.tableHeader {
+  margin-top: 30px;
+  /* background-color: #0b0f20; */
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+  text-align: center;
+}
+.teamRow {
+  border-radius: 10px;
+  border: 1px solid rgba(137, 144, 168, 0.5);
+  margin: 2rem 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0b0f20;
+  cursor: pointer;
+  height: 5rem;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+.teamRow:hover {
+  background-color: #121629;
+}
+.tableHeader div {
+  width: 90px;
+}
+.teamLogo {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+.teamRow:hover .teamLogo {
+  width: 95px;
+  height: 95px;
+}
+.tableHeader span,
+.teamRow span {
+  width: 6%;
+  font-size: 1.6rem;
+}
+.tableHeader p,
+.teamRow p {
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+  width: 18%;
+  color: white;
+}
+/* player card css */
+.playerCard {
+  /* cursor: pointer; */
+  position: relative;
+  border-radius: 5px;
+  background-color: #172033;
+  width: 48%;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  /* margin: ; */
+  /* padding: 1rem; */
+}
+.playerCard i {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.playerCard i svg {
+  color: red;
+}
+.playerImage {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.playerCard h5 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.playerCard p {
+  font-size: 0.8rem;
+}
+.playerCardInfo {
+  margin: 0.8rem;
+}
+/*  */
+.playerImageNew {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+/* pastresult */
+.pastresult {
+  border: 0.5px solid #78787894;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+.pastresult p {
+  font-size: 1rem;
+  margin: 0;
+  width: 16%;
+  text-align: center;
+}
+.choosePic label , .cropButtonEditTeam{
+  position: relative;
+  width: 200px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  margin: .3rem;
+  color: white;
+  background-color: #1b86ed;
+  cursor: pointer;
+}
+.choosePic label:active , .cropButtonEditTeam:active{
+  background-color: #0471d6;
+}
+.choosePic label input {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  background-color: red;
+  cursor: pointer;
+}
+.editTeamButtons button:nth-child(2){
+  display: none;
+  border-color: red;
+  color: red;
+}
+/*  */
+
+/* accordian css ends here */
+
+@media screen and (max-width: 900px) {
+  .arrow {
+    height: 300px;
+    width: 130px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .teamLogo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .teamsListSection {
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 0rem 2rem;
+  }
+  .teamsButton {
+    font-size: 13px;
+    padding: 0.4rem 1rem;
+  }
+  .teamRow {
+    height: 3rem;
+    margin: 1.3rem 0;
+  }
+  .teamsRow h3 {
+    font-size: 1.3rem;
+  }
+  .tableHeader p,
+  .teamRow p {
+    font-size: 0.6rem;
+  }
+  .tableHeader div {
+    width: 60px;
+  }
+  .teamRow span {
+    font-size: 0.9rem;
+  }
+  .acBox1 section {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .acBox1 p {
+    font-size: .7rem;
+    margin: 0.4rem auto;
+  }
+  .teamsContainer > h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .acBox1 i {
+    display: none;
+  }
+  .acBox1 section > div {
+    width: 96%;
+    margin-bottom: 0rem;
+  }
+  .editTeamButtons button:nth-child(2){
+    display: block;
+  }
+  .editTeamButtons{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .editTeamButtons{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .editTeamButtons button{
+    margin: 3px;
+    border-radius: 3px;
+    font-size: .7rem;
+    display: grid;
+    place-items: center;
+  }
+  .tourneyTxt h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .tourneyTxt {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .tourneyImage {
+    margin-right: 1rem;
+    height: 150px;
+    width: 150px;
+    min-width: 150px;
+  }
+  .playerSearch > div > input {
+    padding: .2rem .4rem;
+    font-size: .8rem;
+    height: max-content;
+    width: 8rem;
+  }
+  .playerSearch > div > button {
+    width: 3rem;
+    height: max-content;
+    padding: .2rem .2rem;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+  .headings{
+    font-size: .8rem;
+    padding: .2rem .4rem;
+  }
+  .playerSearch{
+    margin-top: 1.8rem;
+  }
+  .playerCard h5{
+    font-size: 1.2rem;
+  }
+  .playerCard p{
+    margin: .2rem;
+    font-size: .7rem;
+  }
+  .viewVutton{
+    font-size: .8rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 620px) {
+  .playerCard {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .tableHeader span,
+  .teamRow span {
+    opacity: 0;
+  }
+  .teamsRow h3 {
+    font-size: 0.9rem;
+  }
+  .tableHeader div {
+    width: 50px;
+  }
+  .teamLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .teamRow:hover .teamLogo{
+    width: 50px;
+    height: 50px;
+  }
+  .teamRow {
+    height: 2.5rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+  }
+  .tableHeader {
+    margin-top: 15px;
+  }
+  .tableHeader p,
+  .teamRow p {
+    font-size: 0.5rem;
+  }
+  .teamsButton {
+    font-size: 10px;
+    padding: 0.4rem 0.8rem;
+  }
+  .teamsListSection {
+    margin-top: 0rem;
+    border-radius: 5px;
+    padding: 0rem 1rem;
+  }
+  .tourneyTxt {
+    padding: 0;
+    margin: 0;
+    width: 70%;
+  }
+  .acBox1 section > div {
+    margin: 0;
+    width: 5rem;
+  }
+  .tourneyTxt > h3 {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .innerbox {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .teamsContainer {
+    padding: 20px;
+  }
+  .acBox1 section {
+    grid-template-columns: 1fr;
+  }
+  .teamsContainer {
+    padding: 0;
+  }
+  .playerCardInfo h5 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .acBox1 {
+    flex-direction: column;
+  }
+  .tourneyImage {
+   margin: auto;
+  }
+  .tourneyTxt {
+    width: 100%;
+  }
+  .tourneyTxt h3{
+    width: max-content;
+    margin: auto;
+  }
+  .tourneyTxt section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tourneyTxt section > div {
+    width: 96%;
+    margin: auto
+  }
+  .innerbox {
+    padding: 0.8rem;
+  }
+  .acBox1 p {
+    margin: 0.6rem auto;
+  }
+  .acBox1 i {
+    position: absolute;
+    right: 10px;
+    top: 315px;
+  }
+  .tourneyTxt {
+    margin-top: 20px;
+  }
+}

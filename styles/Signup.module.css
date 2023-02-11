@@ -1,0 +1,161 @@
+.signUp_container,
+.logIn_container {
+  /* padding: 25px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: max-content;
+  min-height: 100vh;
+}
+.signUp_container {
+  background-image: url("https://res.cloudinary.com/nakul-londhe/image/upload/v1644562575/caybaj3otroktu1soh2r.jpg");
+}
+.logIn_container {
+  background-image: url("https://res.cloudinary.com/nakul-londhe/image/upload/v1644562541/a9ebxulzvgpv73qpgn4h.jpg");
+}
+.loginsignupBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+}
+.loginFormSidetext {
+  color: white;
+  width: 60%;
+}
+.loginForm {
+  color: white;
+  background-color: #0b0f20;
+  width: 40%;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+}
+
+.loginForm input::-webkit-outer-spin-button,
+.loginForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.loginForm select {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.loginForm select option {
+  color: #fff;
+  background-color: #0b0f20;
+  opacity: 0.8;
+}
+.loginForm select:focus {
+  outline: none;
+}
+.loginForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginForm h1,
+.loginFormSidetext h2 {
+  font-size: 1.5rem;
+}
+.loginFormSidetext p {
+  font-size: 1rem;
+}
+.loginForm section {
+  margin: 1rem 0;
+  width: 100%;
+}
+.loginForm section i {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 0.2rem 0.8rem;
+  color: white;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+.loginForm section svg {
+  font-size: 0.8rem;
+}
+.loginForm p,
+.loginForm span {
+  font-size: 0.8rem;
+}
+.loginForm label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 1rem 0;
+  width: 100%;
+  border-bottom: solid 1px white;
+}
+.loginForm label svg {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.loginForm label input {
+  border: none;
+  outline: none;
+  height: max-content;
+  padding: 0;
+  margin: 0;
+  background-color: #0b0f20;
+}
+.loginForm label input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  font-size: 1.5rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.loginForm label input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+.loginForm button {
+  width: 90%;
+  margin: 1rem 0;
+  padding: 0.4rem 1rem;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #1b85ed 0%, #1a55e9 100%);
+}
+.loginForm button:active {
+  background: linear-gradient(90deg, #1276da 0%, #0046f8 100%);
+}
+@media screen and (min-width: 576px) {
+  .loginForm input[type="date"]::-webkit-inner-spin-button,
+  .loginForm input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loginForm {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .loginsignupBox {
+    flex-direction: column;
+  }
+  .loginForm {
+    width: 100%;
+  }
+  .loginFormSidetext {
+    text-align: center;
+    width: 100%;
+  }
+  .loginForm input[type="date"] {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-height: 1.2em;
+  }
+}

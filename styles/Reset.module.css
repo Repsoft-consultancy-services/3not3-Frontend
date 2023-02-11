@@ -1,0 +1,39 @@
+.resetForm{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.resetForm form{
+    min-width: 50%;
+}
+.resetForm form input{
+    margin-top: .6rem; 
+    margin-bottom: 1.3rem;
+}
+.resetForm form button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #1b86ed;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .4rem 1rem;
+}
+.resetForm form button:active{
+    background-color: #0468c7;
+}
+
+
+/* verify page css */
+.verify{
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

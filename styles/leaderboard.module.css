@@ -1,0 +1,14 @@
+.section1 {
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #2851e1 -50%,
+    #1c1c37 100%
+  );
+  height: 90vh;
+}
+.leaderboard {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}

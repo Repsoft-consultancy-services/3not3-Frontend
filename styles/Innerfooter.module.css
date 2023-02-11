@@ -1,0 +1,146 @@
+.innerfooter{
+    margin: .8rem 0 0 0;
+    border-radius: 10px;
+    border: 0.5px solid #78787850;
+    position: relative;
+    background-color: #0B0F20;
+    color: white;
+    padding: 3rem;
+    font-size: .9rem;
+}
+.innerfooterimg{
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+}
+.innerfooterlogo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.ifs{
+    display: flex;
+}
+.ifs1, .ifs2{
+    width: 20vw;
+    margin-right: 5rem;
+    position: relative;
+}
+.ifs1 span{
+    font-size: .6rem;
+}
+.ifs2 p{
+    cursor: pointer;
+}
+.innerfooter hr{
+    height: 3px;
+    background-color: white;
+    margin: 1rem 0;
+}
+.ifs1 hr{
+    width: 100px;
+}
+.ifs2 hr{
+    width: 50px;
+}
+.isocialIconsF1{
+    margin: 1rem 0;
+}
+.isocialIconsF2{
+    display: none;
+}
+.isocialIconsF1 svg{
+    font-size: 1.8rem;
+    margin-right: .8rem;
+    cursor: pointer;
+}
+.subscribeHere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+.subscribeHere input{
+    border: 0.802281px solid rgba(125, 125, 125, 0.7);
+    outline: none;
+    width: 30vw;
+    margin: 0;
+    padding: 1rem;
+    height: 2rem;
+    font-size: .8rem;
+    z-index: 1;
+}
+.subscribeHere button{
+    border: none;
+    outline: none;
+    width: max-content;
+    margin-left: 1rem;
+    padding: 0 1.7rem;
+    height: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: .8rem;
+    z-index: 1;
+    cursor: pointer;
+    background: linear-gradient(90deg, #680EC9 0%, #5457E7 100%);
+    transition: all 300ms ease-in-out;
+}
+.subscribeHere button:active{
+    background: linear-gradient(90deg, #5457E7 0%, #680EC9 100%);
+}
+@media screen and (max-width: 900px) {
+    .ifs{
+        flex-direction: column;
+    }
+    .ifs1, .ifs2{
+        width: 100%;
+        margin-right: 0rem;
+        position: relative;
+    }
+    .innerfooter{
+        padding: 1.6rem;
+        font-size: .8rem;
+    }
+    .ifs1 span{
+        display: none;
+    }
+    .isocialIconsF1{
+        display: none;
+    }
+    .isocialIconsF2{
+        display: block;
+        margin-top: 2rem;
+    }
+    .isocialIconsF2 svg{
+        font-size: 1.3rem;
+        margin-right: 1rem;
+    }
+    .innerfooter hr{
+        margin: 1rem 0;
+    }
+    .innerfooterlogo{
+        width: 70px;
+        height: 70px;
+    }
+    .ifs1 hr{
+        width: 70px;
+    }
+    .subscribeHere input{
+        width: 100%;
+        padding: .5rem;
+        height: 1.2rem;
+        border: none;
+        font-size: .6rem;
+    }
+    .subscribeHere button{
+        margin-left: .5rem;
+        padding: 0 .5rem;
+        height: 1.2rem;
+        border-radius: 5px;
+        font-size: .6rem;
+    }
+    .subscribeHere{
+        width: 90%;
+        margin: 1.3rem auto;
+    }
+}

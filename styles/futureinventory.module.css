@@ -1,0 +1,11 @@
+.futureinventory{
+    background: #080929;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .futureinventory{
+       padding: 20px;
+       font-size: 1rem;
+    }
+}
+    

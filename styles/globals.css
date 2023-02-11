@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500&display=swap");
+html,
+body {
+  background-color: #1b1f34;
+  background-size: cover;
+  color: #ffffff96;
+  padding: 0;
+  margin: 0;
+  font-family: "Oxanium", cursive;
+  scroll-behavior: smooth;
+  position: relative;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2a2f49;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0a0e1e;
+  border: 1px solid #78787896;
+  border-radius: 5px;
+  /* cursor: grab; */
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+.Mui-focused {
+  color: #1b86ed;
+}
+/* react-toastify */
+.Toastify__toast--error {
+  background: rgb(218, 49, 49) !important;
+}
+.Toastify__toast--success {
+  background: #0eb933 !important;
+}
+:root {
+  --toastify-color-success: #fff !important;
+  --toastify-text-color-light: #fff !important;
+  --toastify-color-error: #fff !important;
+}
+.MuiAutocomplete-tag {
+  background-color: cadetblue;
+  border-color: #0295a9;
+}
+.reactEasyCrop_Container {
+  background-color: #fff;
+  /* width: -webkit-fill-available; */
+  margin: auto;
+}
+/* mui dialog */
+.MuiDialogActions-root {
+  color: #1b86ed !important;
+}
+.MuiDialogActions-root button {
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  border: solid 1px #1b86ed !important;
+  width: fit-content !important;
+}
+.css-bdhsul-MuiTypography-root-MuiDialogTitle-root {
+  color: white;
+}
+.MuiDialogContentText-root {
+  border-radius: 15px !important;
+  /* max-width: 50%; */
+  background-color: #1b1f34 !important;
+  color: white !important;
+  width: 100%;
+}
+.MuiDialog-paper {
+  background-color: #0b0f20 !important;
+  color: none !important;
+  border-radius: 15px !important;
+  /* max-width: 50%; */
+  width: fit-content !important;
+  min-width: fit-content !important;
+}
+/* MuiAccordion */
+.MuiAccordion-region {
+  justify-self: end;
+}
+.MuiAccordion-root {
+  margin-top: 1rem;
+  background-color: #0b0f20;
+  color: #8990a8;
+  width: 100%;
+  display: flexbox;
+  justify-content: space-evenly;
+  flex-grow: 5;
+}
+.MuiAccordion-rounded {
+  border-radius: 0.3rem;
+  border: 1px solid #8990a8;
+}
+.MuiAutocomplete-hasPopupIcon.css-viou3o-MuiAutocomplete-root
+  .MuiOutlinedInput-root {
+  border: solid 1px #0b0f2000;
+}
+.css-h4y409-MuiList-root {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  padding: 0.5rem 1rem !important;
+}
+
+/* .MuiButtonBase-root {
+  width: 100% !important;
+  justify-content: flex-start !important;
+  padding: 0 1rem !important;
+} */
+/* MuiAccordion */
+
+/* mui global changes */
+.css-heg063-MuiTabs-flexContainer,
+.css-k008qs {
+  width: max-content !important;
+  margin: auto !important;
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+  width: fit-content !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(106 109 119) !important;
+}
+.MuiAutocomplete-endAdornment {
+  display: none !important;
+}
+.css-uhb5lp {
+  max-width: auto !important;
+}
+.MuiAvatarGroup-root {
+  padding: 5px;
+}
+.MuiAvatar-root {
+  background-color: #1b86ed !important;
+  font-size: small !important;
+  border: none !important;
+}
+.react-multiple-carousel__arrow {
+  background-color: #1b86ed !important;
+  box-shadow: 0px 0px 15px 3px #1b87ed !important;
+}
+.MuiTabPanel-root {
+  padding: 25px 0 !important;
+}
+.MuiOutlinedInput-root {
+  border: solid 1px #1b87ed;
+}
+/* react-toastify */
+.Toastify__toast--error {
+  background: rgb(218, 49, 49) !important;
+}
+.Toastify__toast--success {
+  background: #0eb933 !important;
+}
+:root {
+  --toastify-color-success: #fff;
+  --toastify-text-color-light: #fff;
+  --toastify-color-error: #fff;
+}
+.swiper {
+  overflow-y: visible !important;
+}
+.swiper-wrapper {
+  overflow-y: visible !important;
+  padding: 1rem 0;
+}
+
+/* colors */
+.MuiPaper-root {
+  background-color: none !important;
+}
+.MuiList-root {
+  background-color: #172033 !important;
+  border: solid 1px #5e6473;
+  overflow: hidden;
+  color: #c8cbdc;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  color: white;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+  border-width: 1.5px;
+  border-radius: 0.3rem;
+  border-color: #1b86ed;
+  background-color: #171730;
+  outline: none;
+  padding: 0.3rem;
+  height: 45px;
+  font-family: "Oxanium", cursive;
+}
+
+textarea {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  outline: none;
+  color: white;
+  background-color: transparent;
+}
+
+label {
+  font-family: "Oxanium", cursive;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+button {
+  font-family: "Oxanium", cursive;
+  font-weight: 900;
+}
+
+.MuiDialog-paper {
+  background-color: #e4e4e4;
+}
+
+.MuiDialog-paper label,
+.MuiDialog-paper hr {
+  color: #1b86ed;
+}
+.MuiDialog-paper input {
+  color: white;
+}
+
+/* new css */
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 25px;
+}
+.maxwidth {
+  max-width: 100vw !important;
+  margin: auto;
+}
+
+.MuiMenuItem-root {
+  margin: 0 5px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .MuiAutocomplete-hasPopupIcon.css-viou3o-MuiAutocomplete-root
+    .MuiOutlinedInput-root {
+    width: 75% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5px;
+  }
+}

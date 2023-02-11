@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.ComingSoonPage {
+  background-color: #0b0f20;
+  height: 100vh;
+  font-family: "Poppins";
+  /* #1B1F34 */
+}
+.comingSoonMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+}
+.comingSoonMsg > p {
+  width: 32%;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+.ComingSoonPage h1 {
+  margin: 0;
+  font-size: 4.4rem;
+  font-family: "NotoSans-Bold";
+}
+.ComingSoonPage span {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+.enterEmail {
+  display: flex;
+  margin-top: 2.5rem;
+  padding: 0.5rem 0;
+  background-color: #172033;
+  width: 32%;
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+.enterEmail > input {
+  background-color: #172033;
+  border: none;
+  margin: 0;
+  padding: 0.8rem;
+}
+.enterEmail > button {
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  border: none;
+  font-family: "Poppins";
+}
+.text {
+  /* background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c); */
+  /* or */
+  background-image: url("https://t3.ftcdn.net/jpg/02/76/46/54/360_F_276465407_RJGqqshdOOgERH0qmPLuqSsnMp1Rm6M4.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  background-position: -100%;
+  animation: animatedText 8s infinite alternate-reverse;
+}
+
+@keyframes animatedText {
+  to {
+    background-position: 100%;
+  }
+}
+
+.ComingSoonPage > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 0.5rem 1rem;
+}
+.ComingSoonPage > footer > h5 {
+  margin: 0;
+}
+.icons {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.icons svg {
+  transition: 300ms ease-in-out;
+}
+.icons svg:hover {
+  color: white;
+}
+.icons svg:hover{
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .ComingSoonPage h1{
+        font-size: 2.5rem;
+    }
+    .ComingSoonPage p{
+        width: 90%;
+        font-size: .7rem;
+    }
+    .ComingSoonPage .enterEmail{
+        width: 90%;
+    }
+    .ComingSoonPage .enterEmail > input{
+        padding: .5rem;
+        font-size: .7rem;
+        height: 25px;
+    }
+    .ComingSoonPage .enterEmail > button{
+        font-size: .7rem;
+        border-radius: 5px;
+    }
+}

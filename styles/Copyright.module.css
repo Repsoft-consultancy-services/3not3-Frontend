@@ -1,0 +1,17 @@
+.sticky {
+    font-size: .8rem;
+    padding: .2rem 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #0a0e1e;
+    color: #fff;
+    z-index: 50;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+    .sticky {
+        font-size: 0.5rem;
+    }
+}

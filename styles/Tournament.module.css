@@ -1,0 +1,291 @@
+.tourneyPage {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tourneyPage .sectionTitle {
+  color: white;
+  font-weight: 500;
+}
+.gameImage {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.gameInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gameInfo div {
+  width: 48%;
+  text-align: center;
+}
+.gameCard {
+  background-color: #0b0f20;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  margin: 3% 0.5rem;
+  cursor: pointer;
+  /* width: 25%; */
+}
+
+.upperGameCard {
+  padding: 0.6rem;
+}
+.gameCardInfo {
+  padding: 0rem .6rem;
+}
+
+.gameImage {
+  border-radius: 0.2rem;
+}
+
+.gameCard h4,
+.gameInfoTitleChild,
+.freeSlots {
+  color: white;
+}
+.freeSlots {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.freeSlotsText {
+  display: grid;
+  place-items: center;
+}
+#gamedateNtime,
+.gameInfoTitle {
+  color: #4d5f74;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.gameInfoTitleChild {
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+.gameCard h4 {
+  font-size: 1rem;
+  margin: 0.1rem;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.gameInfo svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.3rem;
+}
+.trophyIcon svg {
+  color: #f17303;
+}
+.spadeIcon svg {
+  color: #44de00;
+}
+.coinIcon svg {
+  color: #fffd54;
+}
+
+.freeSlots {
+  background-color: #202c3b;
+  /* margin-top: 0.8rem; */
+  padding: 0.5rem 1.6rem;
+}
+
+.welcomeBanner {
+  margin-top: 50px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 15px 50px 15px 50px;
+  height: auto;
+  border: 1px solid #1b86ed;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.welcomeBannerButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcomeBannerButton {
+  width: 200px;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  background-color: #1b86ed;
+}
+
+.welcomeText {
+  font-size: 1.9rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.featuredDiv {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputButtons {
+  padding: 10px;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.dropDown {
+  /* padding: 10px; */
+  width: 110px;
+  height: 40px;
+  background-color: #010619;
+  color: white;
+  border: 1px solid #1b86ed;
+  border-radius: 3px;
+}
+.dropDownDiv {
+  padding: 10px;
+}
+.blueButton {
+  padding: 10px;
+  width: 150px;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  background-color: #1b86ed;
+}
+.blueButtonDiv {
+  padding: 10px;
+}
+.recommendedDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300px;
+  /* flex-wrap: wrap; */
+}
+.imageParent {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 250px;
+}
+.mainImage {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 1rem;
+  height: 270px;
+}
+.imageIcon {
+  position: absolute;
+  bottom: 29%;
+  left: 10%;
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  background-color: #211f1e;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 4px blueviolet;
+}
+.imageText {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  padding: 0px;
+}
+.imageText > p {
+  color: white;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.gamename {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.players {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.players p > span {
+  font-size: 1rem;
+  font-weight: 400 !important;
+}
+.topPlayers {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.topPlayersCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topPlayersCardIcons {
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 600px) {
+  .topPlayers {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcomeBannerButton {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainImage {
+    height: 240px;
+  }
+  .imageParent {
+    width: 100%;
+  }
+  .imageIcon {
+    left: 15px;
+    bottom: 70px;
+  }
+  .imageText {
+    left: 15px;
+    bottom: 20px;
+  }
+  /* .gameCard {
+    margin: 20px 0;
+  } */
+  .tabswrapper {
+    margin: 20px 0;
+  }
+  .notournament{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mainImage {
+    height: 300px;
+    width: 100%;
+  }
+  .imageParent {
+    margin: auto;
+    width: 80%;
+  }
+}

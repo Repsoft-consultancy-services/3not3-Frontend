@@ -1,0 +1,1043 @@
+.borderedImage {
+  border-radius: 50%;
+}
+.profilePhoto {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.bannerPhoto {
+  width: 100%;
+  margin: 20px;
+}
+.closeButtonOfEdit svg {
+  float: right;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+.editPlayerImage {
+  width: 150px !important;
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  background-color: #25a2ca;
+  border: solid 5px #25a2ca;
+  border-radius: 5rem;
+}
+
+.inputFile,
+.inputFileLable {
+  background-color: red;
+  width: 13rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+}
+.inputFile {
+  position: relative;
+  opacity: 0%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.inputFileLable {
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+}
+.inputFileLable svg {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.editPlayerInfo {
+  background-color: #0b0f20;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  width: 50rem;
+}
+.editPlayerInfo div {
+  margin: 0.3rem 0;
+  width: 100%;
+}
+.editPlayerInfo h5 {
+  color: white;
+  font-weight: lighter;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.editPlayerAbout textarea {
+  width: 100%;
+  background-color: #081d5d;
+  border-radius: 12px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  margin: 0;
+}
+.editPlayerFavoriteGames p {
+  margin: 0.5rem;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+.editPlayerFavoriteGames section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#gameSearch {
+  display: flex;
+}
+#gameSearch input {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: solid 1px #ffffff8f;
+  margin: 0.2rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  color: white;
+}
+.editPlayerFavoriteGames span {
+  font-size: 1rem;
+  color: #0295a9;
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+  background-color: #081d5d;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.editPlayerFavoriteGames span svg {
+  font-size: 0.5rem;
+  color: #0295a9;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.editPlayerSocialHandles > span {
+  display: flex;
+  flex-direction: column;
+}
+.editPlayerSocialHandles > span > span {
+  margin: 1rem 0;
+  align-items: center;
+  display: flex;
+}
+.editPlayerSocialHandles span input {
+  margin: 0;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  background-color: #081d5d;
+}
+.editPlayerSocialHandles span svg {
+  color: #2366e7;
+  font-size: 1.8rem;
+}
+.editPlayerInfoButtons {
+  display: flex;
+  justify-content: space-between;
+}
+#discardButton {
+  color: #1a57ea;
+  background-color: transparent;
+  border: solid 2px #1a57ea;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#saveButton {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.uploadProfilePic {
+  z-index: 20;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* max-width: 50rem; */
+  background-color: #172033;
+  border-radius: 5px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  /* margin: auto; */
+}
+.boxTitle h3 {
+  margin: 0.3rem 0 0.5rem 0;
+}
+.boxTitle svg {
+  font-size: 0.7rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+}
+.boxTitle {
+  padding: 0.2rem 2rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #ffffff61;
+}
+.photoSection {
+  background-color: gray;
+  display: grid;
+  place-items: center;
+  height: 13rem;
+  width: 13rem;
+  margin: 3rem 0;
+}
+.photoSection svg {
+  font-size: 10rem;
+}
+.cbox {
+  width: 96%;
+  margin: auto;
+}
+.cbox > center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  /* flex-wrap: wrap; */
+}
+.uploadProfilePic button,
+.updateBackgroundPic button {
+  cursor: pointer;
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 1rem;
+  border-radius: 3rem;
+  width: 13rem;
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: none;
+}
+.cropper {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  height: 250px;
+}
+.uploadBackgroundPic {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+  background-color: #0b0f20;
+  border-radius: 5px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+.backgroundSection {
+  min-height: 15.5rem;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.updateBackgroundPic {
+  /* position: absolute; */
+  z-index: 20;
+  /* left: 0;
+  right: 0; */
+  /* margin-top: 5rem; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* max-width: 60rem; */
+  background-color: #172033;
+  border-radius: 5px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  /* margin: auto; */
+}
+#changePhoto {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+#applyPhoto {
+  cursor: pointer;
+  background: linear-gradient(90deg, #1b86ed 0%, #1a54e9 100%);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 3rem;
+  width: max-content;
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+.updateBackgroundButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+#deleteButton {
+  width: 95%;
+  float: left;
+}
+.location {
+  display: flex;
+  align-items: center;
+  width: 33.3%;
+}
+.location > div {
+  width: 5.5rem;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  background: rgba(64, 68, 92, 0.7);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+.nameId {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+}
+.nameId > h3,
+.nameId > p {
+  margin: 0.2rem 0;
+  color: white;
+}
+.nameId > h3 {
+  font-family: "NotoSans-Bold";
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.nameId > h3 > i {
+  margin-left: 0.7vw;
+  color: #08e947;
+  background-color: white;
+  display: grid;
+  border-radius: 2rem;
+  place-items: center;
+}
+.nameId > p {
+  font-family: "NotoSans-Light";
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.profileImage {
+  position: relative;
+  border: solid 6px #25a2ca;
+  border-radius: 10rem;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 0.6rem;
+  background-color: #25a2ca;
+  box-shadow: 0px 0px 0px 10px #0b0f20;
+}
+.proImage {
+  border-radius: 50%;
+}
+.playerlvl {
+  position: absolute;
+  bottom: 0px;
+  right: -20px;
+}
+.playerlvl > span {
+  position: absolute;
+  margin: 0;
+  top: 20%;
+  left: 25%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+.socialIcons {
+  display: flex;
+  justify-content: flex-end;
+  width: 33.3%;
+}
+.socialIcons > a > i,
+.shareit {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.socialIcons > a > i > svg,
+.shareit > svg {
+  cursor: pointer;
+}
+.steam {
+  color: white;
+}
+.facebook {
+  color: #3b5998;
+  background-color: white;
+}
+.twitter {
+  color: #55acee;
+  background-color: white;
+}
+.twitch {
+  color: white;
+  font-size: 1rem !important;
+  background-color: #6441a5;
+}
+.instagram {
+  color: white;
+  font-size: 1rem !important;
+  background-color: #d916dd;
+}
+.shareit {
+  color: white;
+  font-size: 0.8rem !important;
+  background-color: #43454f;
+}
+
+.profileConatiner {
+  padding: 25px;
+}
+.bottomDiv {
+  margin: 0 80;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottomAbout {
+  border: 1px solid #7d7d7d50;
+  padding: 25px;
+  background-color: #0b0f20;
+  border-radius: 20px;
+  width: 600px;
+}
+.bottomAbout h2 {
+  font-size: 24px;
+  color: white;
+}
+.bottomAbout p {
+  text-align: justify;
+  color: white;
+  font-size: 14px;
+}
+.aboutDataDiv {
+  display: flex;
+  flex-direction: row;
+}
+.aboutDataDivRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutDataDivRow2 {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutDataDivRow > p {
+  color: #2366e7;
+}
+.textStyle {
+  color: #fff !important;
+}
+.aboutGames {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.aboutGames p {
+  text-align: center;
+  min-width: 100px;
+  border-radius: 5px;
+  color: #2366e7;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(4, 46, 167, 0.45);
+}
+
+.bottomTeams {
+  border: 1px solid #7d7d7d50;
+  padding: 20px;
+  background-color: #0b0f20;
+  border-radius: 20px;
+  width: 600px;
+}
+.bottomTeams h2 {
+  font-size: 24px;
+  color: white;
+}
+.bottomTeamsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomTeamsRow {
+  padding: 6px 20px 6px 20px;
+  background-color: #172033;
+  border: 1px solid #8990a870;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.bottomButton {
+  background-color: #006bcf;
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.noTeam {
+  margin-top: 150px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomTeamsBoxText {
+  color: #7eb3d2;
+  font-size: 16px;
+  margin-top: 50px;
+}
+.bottomTeamsTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bottomTeamsTop > div {
+  padding: 10px;
+
+  display: grid;
+  place-items: center;
+}
+.bottomTeamsButton {
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-image: linear-gradient(rgba(27, 134, 237, 1) rgba(26, 84, 233, 1));
+}
+
+@media screen and (max-width: 1030px) {
+  .bottomAbout {
+    width: 480px;
+  }
+
+  .bottomTeams {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .editPlayerImage {
+    width: 90px !important;
+  }
+  .editPlayerFavoriteGames section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .bottomAbout {
+    width: 550px;
+  }
+  .bottomDiv {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomTeams {
+    width: 550px;
+    margin-top: 50px;
+  }
+  .editPlayerInfo {
+    padding: 4%;
+    width: 90vw;
+  }
+  .editPlayerInfo h5 {
+    font-size: 0.8rem;
+  }
+  .editPlayerInfo p {
+    font-size: 0.6rem;
+  }
+  #gameSearch input {
+    height: 1rem;
+    font-size: 0.6rem;
+  }
+  .editPlayerAbout textarea {
+    font-size: 0.6rem;
+  }
+  .editPlayerFavoriteGames span {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .editPlayerSocialHandles > span > span {
+    margin: 0.5rem 0 0 0;
+  }
+  .editPlayerSocialHandles > span > span > svg {
+    font-size: 1rem;
+  }
+  .editPlayerSocialHandles > span > span > input {
+    font-size: 0.6rem;
+    height: max-content;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .editPlayerInfoButtons button {
+    font-size: 0.6rem !important;
+    padding: 0.3rem 0.5rem !important;
+  }
+  .editPlayerInfo > div {
+    width: 90%;
+  }
+  .uploadProfilePic, .updateBackgroundPic {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 660px) {
+  .profileConatiner {
+    padding: 15px;
+  }
+  .upperSection {
+    width: 95%;
+    margin: auto auto 1rem auto;
+  }
+  .bottomAbout {
+    width: 95%;
+  }
+  .bottomTeams {
+    width: 95%;
+    margin-top: 50px;
+  }
+  .coverImage {
+    height: 40vh;
+  }
+  .profileData {
+    flex-direction: column;
+    height: 15rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .location {
+    justify-content: center;
+  }
+  .profileData > div {
+    width: 100%;
+  }
+  .nameId {
+    margin: 1rem 0;
+    order: -1;
+  }
+  .socialIcons {
+    margin: 1rem 0;
+    justify-content: center;
+  }
+}
+
+/* .................................................................... */
+
+/* profile image and banner */
+.profileBannerContainer {
+  position: relative;
+  border: 0.5px solid #78787850;
+  border-radius: 10px;
+}
+.profileBannerCircle {
+  position: relative;
+  width: 100%;
+  aspect-ratio: auto 3 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.profileImageEditIcon {
+  position: absolute;
+  left: 52%;
+  right: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #1b49ed;
+  z-index: 10;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: grid;
+  border: solid 5px #1b1f34;
+  place-items: center;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.profileBannerEditIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.profileBannerEditIcon:hover {
+  background-color: rgba(0, 0, 0, 0.651);
+}
+.profileImageEditIcon:hover {
+  background-color: #0025ac;
+}
+.profileImageCircle {
+  position: absolute;
+  border-radius: 100px;
+  width: 150px;
+  border: solid 6px #25a2ca;
+  aspect-ratio: auto 1 / 1;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -3rem;
+  z-index: 10;
+  box-shadow: 0px 0px 0px 9px #1b1f34;
+}
+
+/* profile about section */
+.profileAboutmeContainerRow1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileAboutmeContainer span {
+  font-size: 1rem;
+}
+.profileAboutmeContainerRow1 div {
+  width: 33%;
+}
+.profileAboutmeContainer {
+  position: relative;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #0b0f20;
+  margin-top: 0.8rem;
+  border: 0.5px solid #78787850;
+}
+.playerLikedGames {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.playerLikedGames p {
+  width: max-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.5rem 0.3rem;
+  font-size: 0.5rem;
+  border: solid 1px white;
+}
+.playerLocationContainer {
+  display: flex;
+  color: #ffffffb7;
+}
+.playerCountry {
+  width: max-content;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  background-color: #40445cb2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+.playerCountry p {
+  margin: 0 0 0 0.5rem;
+}
+.profileAboutmeContainer h5 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.profileAboutmeContainer p {
+  font-size: 1rem;
+}
+.playerEmailInfo {
+  padding: 1rem 0;
+  text-align: center;
+}
+.playerEmailInfo p {
+  margin: 0.3rem 0;
+}
+.playerSocialMediaSection {
+  display: flex;
+  justify-content: flex-end;
+}
+.playerSocialMediaSection svg {
+  margin-left: 0.8rem;
+}
+
+/* profile button */
+.profileAboutmeContainer button,
+.profileTeamsContainer button,
+.profileteamcardInfo span button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  color: white;
+  background-color: #1b86ed;
+  transition: all 300ms ease-in-out;
+}
+.profileAboutmeContainer button:hover,
+.profileTeamsContainer button:hover {
+  background-color: #006bcf;
+}
+.profileAboutmeContainer button {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+
+/* player team */
+.profileTeamsContainer {
+  border: 0.5px solid #78787850;
+  margin-top: 0.8rem;
+  padding: 2rem;
+  background-color: #0b0f20;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+.profileTeamsContainerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+.playerTeams h5 {
+  margin: 0;
+}
+.playerTeams {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 35px;
+}
+
+/* profileteamcard */
+.profileteamcard {
+  aspect-ratio: 1/1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.58);
+}
+.profileteamcardInfo {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 0.7rem;
+  backdrop-filter: blur(3px);
+  width: 100%;
+}
+.profileteamcardInfo p strong {
+  font-size: 0.9rem;
+}
+.profileteamcardInfo p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+.profileteamcardInfo button {
+  width: max-content;
+  margin-left: auto;
+}
+@media screen and (max-width: 1000px) {
+  .profileteamcardInfo {
+    grid-gap: 0.6rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .profileteamcardInfo p strong {
+    font-size: 0.8rem;
+  }
+  .profileteamcardInfo button {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  .playerTeams {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /* .uploadProfilePic , .updateBackgroundPic {
+    max-width: 90%;
+  } */
+  .cbox > center {
+    flex-direction: column;
+  }
+  .uploadProfilePic button,
+  .updateBackgroundPic button {
+    margin: 0.5rem 0 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profileteamcardInfo {
+    grid-gap: 0.5rem;
+    padding: 0.4rem;
+  }
+  .profileteamcardInfo p strong {
+    font-size: 0.7rem;
+  }
+  .profileteamcardInfo button {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .playerTeams {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .profileAboutmeContainerRow1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .playerLocationContainer {
+    display: none;
+  }
+  .socialIcons > a > i,
+  .shareit {
+    margin: 0 0.3rem;
+  }
+  .profileImageCircle {
+    width: 120px;
+    box-shadow: 0px 0px 0px 5px #1b1f34;
+    border: solid 4px #25a2ca;
+  }
+  .profileImageEditIcon {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    left: 55%;
+    right: 45%;
+    bottom: -40px;
+  }
+  .profileImageEditIcon svg {
+    font-size: 1rem;
+  }
+  .innerInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .profileAboutmeContainerRow1 div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .playerTeams {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .profileteamcardInfoM {
+    display: none;
+  }
+  .profileImageEditIcon {
+    bottom: -50px;
+  }
+  .profileImageCircle {
+    width: 80px;
+    box-shadow: 0px 0px 0px 4px #1b1f34;
+    border: solid 3px #25a2ca;
+  }
+  .profileImageEditIcon {
+    width: 30px;
+    height: 30px;
+  }
+  .profileImageEditIcon svg {
+    font-size: 0.7rem;
+  }
+  .aboutmeP {
+    font-size: 0.8rem !important;
+    text-align: justify;
+  }
+  .playerLikedGames p,
+  .innerInfo span {
+    font-size: 0.8rem;
+  }
+  .profileBannerEditIcon {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
