@@ -16,7 +16,6 @@ import {
 
 const iconStyles = {
   fill: "white",
-  maxWidth: "10%",
   height: "5rem",
   display: "block",
   margin: "0 auto",
