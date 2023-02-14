@@ -930,12 +930,12 @@ const Homepage = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className={styles.tournamentBottom}>
+          {/* <div className={styles.tournamentBottom}>
             Compete in <span className={styles.colouredtext}>Free</span> and{" "}
             <span className={styles.colouredtext}>Paid</span> entry Tournaments
             in just a few clicks
             <br />& earn Crypto and real money.
-          </div>
+          </div> */}
         </section>
       </section>
 

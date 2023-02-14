@@ -86,7 +86,7 @@ const upcomingFeaturesData = [
 
 export default function Features() {
   return (
-    <Container>
+    <Container sx={{mt: 8}}>
       <Typography
         fontFamily="Oxanium"
         variant="h3"
