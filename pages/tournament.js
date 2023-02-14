@@ -30,7 +30,7 @@ import {
   Typography,
 } from "@mui/material";
 import { GET_TOURNAMNETS } from "../constants/routes";
-import NewTournamentCard from "../components/tournament/NewTournamentCard";
+import NewTournamentCard from "../components/Tournament/NewTournamentCard";
 import { Box } from "@mui/system";
 const tournament = () => {
   const topPlayers = [
@@ -247,6 +247,12 @@ const tournament = () => {
       case "featuredTournament":
         setSelectedTournaments(featuredTournament);
         break;
+      case "startedTournament":
+        setSelectedTournaments(startedTournament);
+        break;
+      case "upcomingTournament":
+        setSelectedTournaments(upcomingTournament);
+        break;
 
       default:
         break;
@@ -299,7 +305,6 @@ const tournament = () => {
   var completedTournament = tournaments.filter((game) => {
     return game.status === "completed";
   });
-  console.log(upcomingTournament);
   return (
     <>
       <div className={"container"}>
@@ -511,6 +516,25 @@ const tournament = () => {
             </center>
           )} */}
           <Box paddingY={4}>
+            <Typography
+              variant="h3"
+              color={"white"}
+              fontFamily={"Oxanium"}
+              align="center"
+              fontWeight="bold"
+            >
+              BROWSE TOURNAMENTS
+            </Typography>
+            <Typography
+              variant="h6"
+              align="center"
+              color={"white"}
+              fontFamily={"Oxanium"}
+              gutterBottom
+            >
+              Find the perfect tournaments for you. Head to head matches where
+              you pick the game, rules and prize.
+            </Typography>
             <select
               style={{
                 padding: "1rem",
@@ -528,6 +552,8 @@ const tournament = () => {
             >
               <option value="featuredTournament">Featured Tournaments</option>
               <option value="completedTournament">Completed Tournaments</option>
+              <option value="startedTournament">Started Tournaments</option>
+              <option value="upcomingTournament">Upcoming Tournaments</option>
             </select>
             <Stack spacing={2}>
               {selectedTournaments.map((tournament) => (
