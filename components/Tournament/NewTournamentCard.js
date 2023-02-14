@@ -7,6 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 const getTotalPrizePool = (tournament) => {
@@ -67,7 +68,10 @@ function TournamentDetailCard({ heading, data }) {
 
 export default function NewTournamentCard({ tournament }) {
   return (
-    <Card sx={{ bgcolor: "#0B0F20", border: "1px solid #5533A1" }}>
+    <Card
+      key={tournament._id}
+      sx={{ bgcolor: "#0B0F20", border: "1px solid #5533A1" }}
+    >
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 4, sm: 0, md: 4 }}
@@ -165,7 +169,9 @@ export default function NewTournamentCard({ tournament }) {
             size="large"
             sx={{ display: "block", margin: "0 auto", mb: 3 }}
           >
-            View Tournament
+            <Link href={`/tournament/${encodeURIComponent(tournament._id)}`}>
+              View Tournament
+            </Link>
           </Button>
           <Typography align="center" color="white" fontFamily={"Oxanium"}>
             Top 3 Players Win a Cash Prize

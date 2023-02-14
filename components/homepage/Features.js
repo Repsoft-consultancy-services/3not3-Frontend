@@ -12,6 +12,7 @@ import {
   FaLanguage,
   FaQuran,
   FaShoppingBag,
+  FaFingerprint,
 } from "react-icons/fa";
 
 const iconStyles = {
@@ -21,73 +22,79 @@ const iconStyles = {
   margin: "0 auto",
 };
 
-const placeholderFeaturesData = [
+const featuresData = [
   {
-    icon: <FaHandPointUp style={iconStyles} size={30} />,
-    text: "One Click Install Demo",
-    subtext: "Get a headstart with our one click install demo importer.",
+    icon: <FaUserAstronaut style={iconStyles} size={60} />,
+    text: "Play tournaments",
+    subtext: "Compete in Free and Paid entry Tournaments in just a few clicks.",
   },
   {
-    icon: <FaObjectUngroup style={iconStyles} size={80} />,
-    text: "Create Pages with Elementor",
+    icon: <FaTeamspeak style={iconStyles} size={100} />,
+    text: "Host tournaments",
     subtext:
-      "Easily create amazing pages with Elementor, the best Page Builder for WordPress.",
-  },
-  {
-    icon: <FaTeamspeak style={iconStyles} size={80} />,
-    text: "Custom Team Pages",
-    subtext:
-      "Promote and showcase what's going on in your team in their beautifully designed profile!",
-  },
-  {
-    icon: <FaUserAstronaut style={iconStyles} size={80} />,
-    text: "Custom User Pages",
-    subtext:
-      "Better looking than ever, users have custom designed pages, no more WordPress default!",
+      "Manage your e-sports competition and league event with right backend-Automations technology tools.",
   },
   {
     icon: <FaMagic style={iconStyles} size={80} />,
-    text: "Fully Customizable",
+    text: "Post content",
     subtext:
-      "From fonts to background images, Arcane gives you the power to create a completely unique looking website.",
+      "User can post,share and comment on the posts which are given on daily feed.",
   },
   {
-    icon: <FaTrophy style={iconStyles} size={100} />,
-    text: "Create Tournaments",
+    icon: <FaTrophy style={iconStyles} size={60} />,
+    text: "Earn coins",
+    subtext: "Daily login rewards and earn coins on every match you won.",
+  },
+  {
+    icon: <FaShoppingBag style={iconStyles} size={60} />,
+    text: "Redeem rewards",
+    subtext: "You can redeem your earned rewards by visiting the marketplace.",
+  },
+  {
+    icon: <FaObjectUngroup style={iconStyles} size={100} />,
+    text: "Chat with friends",
     subtext:
-      "With more than 4 tournaments types to choose from, Arcane gives you and your users the ability to create tournaments and get paid for it!",
+      "User can communicate with other players and also with the organisers regarding the events",
+  },
+];
+
+const upcomingFeaturesData = [
+  {
+    icon: <FaHandPointUp style={iconStyles} size={80} />,
+    text: "Hiring Platform",
+    subtext:
+      "Our hiring platform helps your organisation or a individual to recruit, interview, research, and hire Esports realted employees.",
   },
   {
     icon: <FaChartLine style={iconStyles} size={80} />,
-    text: "Optimized for SEO",
+    text: "Cloud Gaming",
     subtext:
-      "With the new Arcane rework ranking in Google has never been easier.",
+      "Cloud Gaming allows you to play hundreds of console games on the devices you already have.",
   },
   {
-    icon: <FaLanguage style={iconStyles} size={200} />,
-    text: "Translation Ready",
+    icon: <FaUserAstronaut style={iconStyles} size={100} />,
+    text: "VR Gaming",
     subtext:
-      "Arcane is not only compatible with the WPML plugin for creating multilingual websites and ready for RTL languages, but also comes prepared for easy translation into any language.",
+      "VR gaming systems generate realistic sensations that simulate users' physical presence in a computer-generated environment.",
   },
   {
-    icon: <FaQuran style={iconStyles} size={50} />,
-    text: "RTL Supported",
-    subtext:
-      "Your website is on a RTL language? No problem, we got you covered.",
-  },
-  {
-    icon: <FaShoppingBag style={iconStyles} size={50} />,
-    text: "Woocommerce Ready",
-    subtext:
-      "Got Merch to sell? Easily set up shops with Arcane Woocommerce plugin.",
+    icon: <FaTeamspeak style={iconStyles} size={100} />,
+    text: "Lan tournaments",
+    subtext: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, blanditiis inventore?",
   },
 ];
 
 export default function Features() {
   return (
     <Container>
-      <Typography fontFamily="Oxanium" variant="h3" color="white" align="center" gutterBottom>
-        Fantastic Features
+      <Typography
+        fontFamily="Oxanium"
+        variant="h3"
+        color="white"
+        align="center"
+        gutterBottom
+      >
+        Coming soon on playstore and App store with fantastic features.
       </Typography>
       <Divider
         sx={{
@@ -97,8 +104,32 @@ export default function Features() {
           marginBottom: 4,
         }}
       />
-      <Grid container spacing={4}>
-        {placeholderFeaturesData.map((featuresData) => (
+      <Grid container spacing={4} marginBottom={4}>
+        {featuresData.map((featuresData) => (
+          <Grid item xs={12} sm={6}>
+            <FeatureCard data={featuresData} />
+          </Grid>
+        ))}
+      </Grid>
+      <Typography
+        fontFamily="Oxanium"
+        variant="h3"
+        color="white"
+        align="center"
+        gutterBottom
+      >
+        Upcoming additions
+      </Typography>
+      <Divider
+        sx={{
+          border: "2px solid orange",
+          width: "10%",
+          margin: "0 auto",
+          marginBottom: 4,
+        }}
+      />
+      <Grid container spacing={4} marginBottom={4}>
+        {upcomingFeaturesData.map((featuresData) => (
           <Grid item xs={12} sm={6}>
             <FeatureCard data={featuresData} />
           </Grid>

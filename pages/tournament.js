@@ -530,7 +530,7 @@ const tournament = () => {
               align="center"
               color={"white"}
               fontFamily={"Oxanium"}
-              gutterBottom
+              marginBottom={4}
             >
               Find the perfect tournaments for you. Head to head matches where
               you pick the game, rules and prize.
