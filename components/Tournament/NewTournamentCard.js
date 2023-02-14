@@ -123,10 +123,6 @@ export default function NewTournamentCard({ tournament }) {
             <TournamentDetailCard
               heading={"TEAM SIZE"}
               data={
-                tournament.membersPerTeam +
-                " " +
-                "VS" +
-                " " +
                 tournament.membersPerTeam
               }
             />
@@ -173,9 +169,6 @@ export default function NewTournamentCard({ tournament }) {
               View Tournament
             </Link>
           </Button>
-          <Typography align="center" color="white" fontFamily={"Oxanium"}>
-            Top 3 Players Win a Cash Prize
-          </Typography>
         </Box>
       </Stack>
     </Card>

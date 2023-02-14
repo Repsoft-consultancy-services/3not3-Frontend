@@ -516,25 +516,6 @@ const tournament = () => {
             </center>
           )} */}
           <Box paddingY={4}>
-            <Typography
-              variant="h3"
-              color={"white"}
-              fontFamily={"Oxanium"}
-              align="center"
-              fontWeight="bold"
-            >
-              BROWSE TOURNAMENTS
-            </Typography>
-            <Typography
-              variant="h6"
-              align="center"
-              color={"white"}
-              fontFamily={"Oxanium"}
-              marginBottom={4}
-            >
-              Find the perfect tournaments for you. Head to head matches where
-              you pick the game, rules and prize.
-            </Typography>
             <select
               style={{
                 padding: "1rem",
@@ -550,10 +531,10 @@ const tournament = () => {
               id="demo-simple-select"
               onChange={(event) => handleSelectedTournament(event.target.value)}
             >
-              <option value="featuredTournament">Featured Tournaments</option>
-              <option value="completedTournament">Completed Tournaments</option>
-              <option value="startedTournament">Started Tournaments</option>
-              <option value="upcomingTournament">Upcoming Tournaments</option>
+              <option value="featuredTournament">Featured</option>
+              <option value="completedTournament">Completed</option>
+              <option value="startedTournament">Started</option>
+              <option value="upcomingTournament">Upcoming</option>
             </select>
             <Stack spacing={2}>
               {selectedTournaments.map((tournament) => (

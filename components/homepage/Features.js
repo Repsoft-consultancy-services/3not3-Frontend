@@ -80,7 +80,7 @@ const upcomingFeaturesData = [
   {
     icon: <FaTeamspeak style={iconStyles} size={100} />,
     text: "Lan tournaments",
-    subtext: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, blanditiis inventore?",
+    subtext: "By our platform organisers can host end to end lan tournaments without any hassle",
   },
 ];
 
@@ -90,6 +90,8 @@ export default function Features() {
       <Typography
         fontFamily="Oxanium"
         variant="h3"
+        fontSize="3rem"
+        fontWeight="bold"
         color="white"
         align="center"
         gutterBottom
@@ -114,6 +116,8 @@ export default function Features() {
       <Typography
         fontFamily="Oxanium"
         variant="h3"
+        fontSize="3rem"
+        fontWeight="bold"
         color="white"
         align="center"
         gutterBottom
