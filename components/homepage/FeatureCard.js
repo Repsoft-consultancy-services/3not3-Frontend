@@ -36,6 +36,7 @@ export default function FeatureCard({ data: { icon, text, subtext } }) {
             variant="h5"
             fontWeight="bold"
             color="white"
+            sx={{ textAlign: { xs: "center", sm: "left" } }}
             gutterBottom
           >
             {text}

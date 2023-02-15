@@ -142,7 +142,6 @@ const Homepage = () => {
     console.log("formdata", formdata);
   };
 
-
   return (
     <div className={styles.homepage}>
       <Dialog open={open} button={"submit"}>
@@ -939,7 +938,14 @@ const Homepage = () => {
         </section>
       </section>
 
-      <Features />
+      <div
+        style={{
+          backgroundImage:
+            "url('https://files.slack.com/files-pri/T04DWGNVBEJ-F04PJ2TQ2EN/bg3home.jpg')",
+        }}
+      >
+        <Features />
+      </div>
 
       {/* new code of highlights banner */}
       {/* <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
