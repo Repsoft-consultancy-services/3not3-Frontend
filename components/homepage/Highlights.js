@@ -122,13 +122,18 @@ export default function Highlights() {
       <section className={styles.highlightRev}>
         <div
           className={styles.highlightBg}
+          
           style={{
             backgroundImage: "url(/characters/highlight-char-6-bg.png)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         >
-          <img src="/characters/highlight-char-6.png" alt="" />
+          <div id={styles.highlightBgWithAnimation}>
+            <img src="/characters/highlight-char-6-ball.png" alt="" />
+            <img src="/characters/highlight-char-6-ball-2.png" alt="" />
+            <img src="/characters/highlight-char-6.png" alt="" />
+          </div>
         </div>
         <div className={styles.highlightText}>
           <h3>
@@ -138,7 +143,7 @@ export default function Highlights() {
             Visit our shop to buy game items and our new merchandise and enter
             giveaways!
           </p>
-        <button className={styles.highlightButton}>CHECKOUT</button>
+          <button className={styles.highlightButton}>CHECKOUT</button>
         </div>
       </section>
       <section className={styles.highlight}>
