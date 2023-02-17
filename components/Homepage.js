@@ -35,6 +35,7 @@ import {
   Checkbox,
   FormControlLabel,
 } from "@mui/material";
+import Highlights from "./homepage/Highlights";
 const Homepage = () => {
   const [activeslide, setactiveslide] = useState(0);
   const [logged, setLogged] = useState(false);
@@ -873,17 +874,18 @@ const Homepage = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className={styles.tournamentBottom}>
+          {/* <div className={styles.tournamentBottom}>
             Compete in <span className={styles.colouredtext}>Free</span> and{" "}
             <span className={styles.colouredtext}>Paid</span> entry Tournaments
             in just a few clicks
             <br />& earn Crypto and real money.
-          </div>
+          </div> */}
         </section>
       </section>
 
       {/* new code of highlights banner */}
-      <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
+      <Highlights />
+      {/* <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
         <section className={styles.bannerHighlight}>
           <div className={styles.bannerHighlightBackground1}>
             <div className={styles.chracter1}>
@@ -991,6 +993,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+
         <section className={styles.bannerHighlight}>
           <div className={styles.bannerHighlightBackground2}>
             <div className={styles.chracterSmoke2}>
@@ -1061,7 +1064,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       {/* our Partners */}
       {/* <div className={styles.ourpartners + " " + "container"}>
