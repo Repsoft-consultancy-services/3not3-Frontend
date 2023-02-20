@@ -58,6 +58,10 @@
   max-width: 50%;
 }
 
+.highlightRev:last-child > .highlightBg > img {
+  max-width: 70%;
+}
+
 .highlight .highlightBg > img {
   margin-left: auto;
 }
@@ -70,12 +74,13 @@
 #highlightBgWithAnimation {
   width: min-content;
   position: relative;
+  overflow: hidden;
 }
 
 #highlightBgWithAnimation > img {
-    padding: 10rem 0;
-    margin-left: auto;
-    animation: bounce 0.4s ease infinite alternate;
+  padding: 10rem 0;
+  margin-left: auto;
+  animation: bounce 0.4s ease infinite alternate;
 }
 
 #highlightBgWithAnimation > img:nth-child(1) {
@@ -93,9 +98,9 @@
 }
 
 #highlightBgWithAnimation > img:nth-child(3) {
-    animation: none;
-    position: relative;
-    z-index: 2;
+  animation: none;
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes bounce {
@@ -156,5 +161,21 @@
   .highlight p,
   .highlightRev p {
     font-size: 1rem;
+  }
+
+  #highlightBgWithAnimation {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #highlightBgWithAnimation > img:nth-child(3) {
+    max-width: 100%;
+  }
+  #highlightBgWithAnimation > img:nth-child(1) {
+    width: 50%;
+    top: -3rem;
+  }
+  #highlightBgWithAnimation > img:nth-child(2) {
+    width: 25%;
+    top: -1rem;
   }
 }
