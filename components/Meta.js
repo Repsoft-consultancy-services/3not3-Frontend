@@ -14,7 +14,7 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "3NOT3",
+  title: "Oscorp Gaming",
   keywords: "Gaming",
   description: "Get the latest games here",
 };

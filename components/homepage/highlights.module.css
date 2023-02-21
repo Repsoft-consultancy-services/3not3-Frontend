@@ -58,10 +58,6 @@
   max-width: 50%;
 }
 
-.highlightRev:last-child > .highlightBg > img {
-  max-width: 70%;
-}
-
 .highlight .highlightBg > img {
   margin-left: auto;
 }
@@ -177,5 +173,8 @@
   #highlightBgWithAnimation > img:nth-child(2) {
     width: 25%;
     top: -1rem;
+  }
+  .highlightRev:last-child > .highlightBg > img {
+    max-width: 70%;
   }
 }
