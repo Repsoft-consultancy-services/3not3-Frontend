@@ -401,7 +401,13 @@ const Homepage = () => {
         </DialogActions>
       </Dialog>
       <div className={styles.homepageVedioection}>
-        <video autoPlay muted loop className={styles.homebackground1}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsinline
+          className={styles.homebackground1}
+        >
           <source src="https://3not3-storage.s3.ap-south-1.amazonaws.com/Oscorp+Gaming+Teaser+for+web.webm" />
         </video>
         <div>
@@ -939,14 +945,14 @@ const Homepage = () => {
         </section>
       </section>
 
-      <div
+      {/* <div
         style={{
           backgroundImage:
             "url('https://files.slack.com/files-pri/T04DWGNVBEJ-F04PJ2TQ2EN/bg3home.jpg')",
         }}
       >
         <Features />
-      </div>
+      </div> */}
 
       {/* new code of highlights banner */}
       {/* <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
