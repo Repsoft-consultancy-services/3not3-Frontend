@@ -35,6 +35,8 @@ import {
   Checkbox,
   FormControlLabel,
 } from "@mui/material";
+import Features from "./homepage/Features";
+
 const Homepage = () => {
   const [activeslide, setactiveslide] = useState(0);
   const [logged, setLogged] = useState(false);
@@ -134,11 +136,12 @@ const Homepage = () => {
       //   sethaveteam(false);
       // }
     }
-  }, [])
+  }, []);
 
   const submitform = () => {
     console.log("formdata", formdata);
   };
+
   return (
     <div className={styles.homepage}>
       <Dialog open={open} button={"submit"}>
@@ -398,7 +401,7 @@ const Homepage = () => {
       </Dialog>
       <div className={styles.homepageVedioection}>
         <video autoPlay muted loop className={styles.homebackground1}>
-          <source src="https://3not3-storage.s3.ap-south-1.amazonaws.com/TeaserForWeb.webm" />
+          <source src="https://3not3-storage.s3.ap-south-1.amazonaws.com/Oscorp+Gaming+Teaser+for+web.webm" />
         </video>
         <div>
           <h3>
@@ -563,7 +566,12 @@ const Homepage = () => {
         >
           <div className={styles.homecard}>
             <div data-aos="flip-right">
-              <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+              <Link
+                exact
+                href={
+                  logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                }
+              >
                 {/* <Image
                     src="https://res.cloudinary.com/nakul-londhe/image/upload/v1643574404/pn7bjnyheenc7xbusmrq.png"
                     width={350}
@@ -598,7 +606,12 @@ const Homepage = () => {
 
           <div className={styles.homecard}>
             <div data-aos="flip-right">
-              <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+              <Link
+                exact
+                href={
+                  logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                }
+              >
                 {/* <Image
                     src="https://res.cloudinary.com/nakul-londhe/image/upload/v1643574534/xli7nv24giukieryliwo.png"
                     width={350}
@@ -632,7 +645,12 @@ const Homepage = () => {
 
           <div className={styles.homecard}>
             <div data-aos="flip-right">
-              <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+              <Link
+                exact
+                href={
+                  logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                }
+              >
                 {/* <Image
                     src="https://res.cloudinary.com/nakul-londhe/image/upload/v1643573892/iwonvaevbgfrdi1whyzj.png"
                     width={350}
@@ -667,7 +685,12 @@ const Homepage = () => {
 
           <div className={styles.homecard}>
             <div data-aos="flip-right">
-              <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+              <Link
+                exact
+                href={
+                  logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                }
+              >
                 {/* <Image
                     src="https://res.cloudinary.com/nakul-londhe/image/upload/v1643574286/sggjhpbesqtlqhw1nkkq.png"
                     width={350}
@@ -706,7 +729,10 @@ const Homepage = () => {
           <div className={styles.homehead + " " + "container"}>
             <h1 className={styles.homeh1}>TOURNAMENTS</h1>
             <hr className={styles.homehr} />
-            <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+            <Link
+              exact
+              href={logged ? (haveteam ? "/tournament" : "/teams") : "/signup"}
+            >
               <h2 className={styles.homeh2}>SEE ALL</h2>
             </Link>
           </div>
@@ -830,42 +856,72 @@ const Homepage = () => {
                 </Link>
               </SwiperSlide> */}
               <SwiperSlide className={styles.swiperslidecustom}>
-                <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
                   <div className={styles.sliderimg}>
                     <Image src={card1} layout="fill" alt="pubg" />
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperslidecustom}>
-                <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
                   <div className={styles.sliderimg}>
                     <Image src={card2} layout="fill" alt="pubg" />
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperslidecustom}>
-                <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
                   <div className={styles.sliderimg}>
                     <Image src={card3} layout="fill" alt="pubg" />
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperslidecustom}>
-                <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
                   <div className={styles.sliderimg}>
                     <Image src={card4} layout="fill" alt="pubg" />
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperslidecustom}>
-                <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
                   <div className={styles.sliderimg}>
                     <Image src={card5} layout="fill" alt="pubg" />
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperslidecustom}>
-                <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
                   <div className={styles.sliderimg}>
                     <Image src={card6} layout="fill" alt="pubg" />
                   </div>
@@ -873,17 +929,26 @@ const Homepage = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className={styles.tournamentBottom}>
+          {/* <div className={styles.tournamentBottom}>
             Compete in <span className={styles.colouredtext}>Free</span> and{" "}
             <span className={styles.colouredtext}>Paid</span> entry Tournaments
             in just a few clicks
             <br />& earn Crypto and real money.
-          </div>
+          </div> */}
         </section>
       </section>
 
+      <div
+        style={{
+          backgroundImage:
+            "url('https://files.slack.com/files-pri/T04DWGNVBEJ-F04PJ2TQ2EN/bg3home.jpg')",
+        }}
+      >
+        <Features />
+      </div>
+
       {/* new code of highlights banner */}
-      <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
+      {/* <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
         <section className={styles.bannerHighlight}>
           <div className={styles.bannerHighlightBackground1}>
             <div className={styles.chracter1}>
@@ -1061,7 +1126,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       {/* our Partners */}
       {/* <div className={styles.ourpartners + " " + "container"}>

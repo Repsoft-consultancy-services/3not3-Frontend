@@ -20,8 +20,18 @@ import { Footer } from "../components/Footer";
 import Tab from "@material-ui/core/Tab";
 import TabContext from "@material-ui/lab/TabContext";
 import TabPanel from "@material-ui/lab/TabPanel";
-import { Tabs } from "@mui/material";
+import {
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  Stack,
+  Tabs,
+  Typography,
+} from "@mui/material";
 import { GET_TOURNAMNETS } from "../constants/routes";
+import NewTournamentCard from "../components/Tournament/NewTournamentCard";
+import { Box } from "@mui/system";
 const tournament = () => {
   const topPlayers = [
     {
@@ -223,8 +233,30 @@ const tournament = () => {
   const [loading, setLoading] = useState(true);
   const [value, setValue] = useState("1");
   const [isMobile, setisMobile] = useState(false);
+  const [selectedTournaments, setSelectedTournaments] = useState([]);
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const handleSelectedTournament = (option) => {
+    switch (option) {
+      case "completedTournament":
+        setSelectedTournaments(completedTournament);
+        break;
+      case "featuredTournament":
+        setSelectedTournaments(featuredTournament);
+        break;
+      case "startedTournament":
+        setSelectedTournaments(startedTournament);
+        break;
+      case "upcomingTournament":
+        setSelectedTournaments(upcomingTournament);
+        break;
+
+      default:
+        break;
+    }
   };
   useEffect(() => {
     if (window.innerWidth < 500) {
@@ -247,7 +279,7 @@ const tournament = () => {
   const getTournaments = async (url) => {
     try {
       await axios.get(`${GET_TOURNAMNETS}`).then((res) => {
-        // console.log(res);
+        console.log(res.data.data[0]);
         setTournaments(res.data.data);
         setLoading(false);
       });
@@ -261,8 +293,7 @@ const tournament = () => {
 
   var featuredTournament = tournaments.filter((tournament) => {
     return tournament.featured === true && tournament.status !== "completed";
-  }
-  );
+  });
   var upcomingTournament = tournaments.filter((game) => {
     return game.upcoming === true && game.status !== "started";
   });
@@ -273,9 +304,7 @@ const tournament = () => {
 
   var completedTournament = tournaments.filter((game) => {
     return game.status === "completed";
-  }
-  );
-  console.log(upcomingTournament);
+  });
   return (
     <>
       <div className={"container"}>
@@ -327,7 +356,7 @@ const tournament = () => {
             </div>
           )}
           {/* featured */}
-          {!isMobile && (
+          {/* {!isMobile && (
             <div className={styles.featuredDiv}>
               <p className={styles.sectionTitle}>Featured</p>
             </div>
@@ -378,12 +407,12 @@ const tournament = () => {
           )}
           {((!isMobile && featuredTournament.length === 0) ||
             (isMobile && value === "1" && featuredTournament.length === 0)) && (
-              <center>
-                <h2 className={styles.notournament}>No Tournament to Show</h2>
-              </center>
-            )}
+            <center>
+              <h2 className={styles.notournament}>No Tournament to Show</h2>
+            </center>
+          )} */}
           {/* Started */}
-          {!isMobile && <p className={styles.sectionTitle}>Started</p>}
+          {/* {!isMobile && <p className={styles.sectionTitle}>Started</p>}
           {isMobile ? (
             value === "2" &&
             startedTournament.map((game) => (
@@ -430,12 +459,12 @@ const tournament = () => {
           )}
           {((!isMobile && startedTournament.length === 0) ||
             (isMobile && value === "2" && startedTournament.length === 0)) && (
-              <center>
-                <h2 className={styles.notournament}>No Tournament to Show</h2>
-              </center>
-            )}
+            <center>
+              <h2 className={styles.notournament}>No Tournament to Show</h2>
+            </center>
+          )} */}
           {/* upcoming */}
-          {!isMobile && <p className={styles.sectionTitle}>Upcoming</p>}
+          {/* {!isMobile && <p className={styles.sectionTitle}>Upcoming</p>}
           {isMobile ? (
             value === "3" &&
             upcomingTournament.map((game) => (
@@ -482,11 +511,44 @@ const tournament = () => {
           )}
           {((!isMobile && upcomingTournament.length === 0) ||
             (isMobile && value === "3" && upcomingTournament.length === 0)) && (
-              <center>
-                <h2 className={styles.notournament}>No Tournament to Show</h2>
-              </center>
-            )}
-          {!isMobile && <p className={styles.sectionTitle}>Completed</p>}
+            <center>
+              <h2 className={styles.notournament}>No Tournament to Show</h2>
+            </center>
+          )} */}
+          <Box paddingY={4}>
+            <select
+              style={{
+                padding: "1rem",
+                background: "#5533A1",
+                color: "white",
+                border: "none",
+                outline: "none",
+                marginBottom: "1rem",
+                fontSize: "1rem",
+                fontFamily: "Oxanium",
+              }}
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              onChange={(event) => handleSelectedTournament(event.target.value)}
+            >
+              <option value="featuredTournament">Featured</option>
+              <option value="completedTournament">Completed</option>
+              <option value="startedTournament">Started</option>
+              <option value="upcomingTournament">Upcoming</option>
+            </select>
+            <Stack spacing={2}>
+              {selectedTournaments.map((tournament) => (
+                <NewTournamentCard tournament={tournament} />
+              ))}
+              {!selectedTournaments.length ? (
+                <Typography variant="h4" fontFamily={"Oxanium"} align="center">
+                  No Tournament to Show
+                </Typography>
+              ) : null}
+            </Stack>
+          </Box>
+
+          {/* {!isMobile && <p className={styles.sectionTitle}>Completed</p>}
           {isMobile ? (
             value === "4" &&
             completedTournament.map((game) => (
@@ -532,11 +594,13 @@ const tournament = () => {
             </>
           )}
           {((!isMobile && completedTournament.length === 0) ||
-            (isMobile && value === "4" && completedTournament.length === 0)) && (
-              <center>
-                <h2 className={styles.notournament}>No Tournament to Show</h2>
-              </center>
-            )}
+            (isMobile &&
+              value === "4" &&
+              completedTournament.length === 0)) && (
+            <center>
+              <h2 className={styles.notournament}>No Tournament to Show</h2>
+            </center>
+          )} */}
         </div>
         <Footer />
       </div>
