@@ -37,6 +37,7 @@ import {
 } from "@mui/material";
 import Features from "./homepage/Features";
 
+import Highlights from "./homepage/Highlights";
 const Homepage = () => {
   const [activeslide, setactiveslide] = useState(0);
   const [logged, setLogged] = useState(false);
@@ -1056,6 +1057,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+
         <section className={styles.bannerHighlight}>
           <div className={styles.bannerHighlightBackground2}>
             <div className={styles.chracterSmoke2}>
@@ -1127,6 +1129,7 @@ const Homepage = () => {
           </div>
         </section>
       </div> */}
+      <Highlights />
 
       {/* our Partners */}
       {/* <div className={styles.ourpartners + " " + "container"}>
