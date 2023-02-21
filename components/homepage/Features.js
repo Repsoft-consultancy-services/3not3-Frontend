@@ -80,13 +80,14 @@ const upcomingFeaturesData = [
   {
     icon: <FaTeamspeak style={iconStyles} size={100} />,
     text: "Lan tournaments",
-    subtext: "By our platform organisers can host end to end lan tournaments without any hassle",
+    subtext:
+      "By our platform organisers can host end to end lan tournaments without any hassle",
   },
 ];
 
 export default function Features() {
   return (
-    <Container sx={{mt: 8}}>
+    <Container sx={{ mt: 8 }}>
       <Typography
         fontFamily="Oxanium"
         variant="h3"
@@ -107,8 +108,8 @@ export default function Features() {
         }}
       />
       <Grid container spacing={4} marginBottom={4}>
-        {featuresData.map((featuresData) => (
-          <Grid item xs={12} sm={6}>
+        {featuresData.map((featuresData, index) => (
+          <Grid item xs={12} sm={6} key={index}>
             <FeatureCard data={featuresData} />
           </Grid>
         ))}
