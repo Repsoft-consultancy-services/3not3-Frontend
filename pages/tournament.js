@@ -309,8 +309,7 @@ const tournament = () => {
     <>
       <div className={"container"}>
         <div className={styles.tourneyPage}>
-          {/* recommended games */}
-          <div>
+          {/* <div>
             <p className={styles.sectionTitle}>Recommended Games</p>
             <div className={styles.recommendedGames}>
               <Carousel responsive={responsiveRecommend}>
@@ -324,9 +323,7 @@ const tournament = () => {
                         </div>
                         <div className={styles.imageText}>
                           <p className={styles.gamename}>{game.name}</p>
-                          {/* <p className={styles.players}>
-                            <span>{game.players}</span> players
-                          </p> */}
+                          
                         </div>
                       </div>
                     </div>
@@ -334,9 +331,8 @@ const tournament = () => {
                 ))}
               </Carousel>
             </div>
-            {/* </Carousel> */}
-          </div>
-          {isMobile && (
+          </div> */}
+          {/* {isMobile && (
             <div className={styles.tabswrapper}>
               <TabContext value={value}>
                 <Tabs
@@ -354,7 +350,7 @@ const tournament = () => {
                 </Tabs>
               </TabContext>
             </div>
-          )}
+          )} */}
           {/* featured */}
           {/* {!isMobile && (
             <div className={styles.featuredDiv}>
