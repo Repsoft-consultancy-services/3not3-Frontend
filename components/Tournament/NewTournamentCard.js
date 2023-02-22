@@ -4,6 +4,7 @@ import {
   Card,
   CardMedia,
   Divider,
+  Grid,
   Stack,
   Typography,
 } from "@mui/material";
@@ -22,7 +23,7 @@ const getTotalPrizePool = (tournament) => {
 function TournamentTimeCard({ children }) {
   return (
     <Card
-      sx={{ bgcolor: "#5533A1", padding: 2, width: { xs: "100%", sm: "auto" } }}
+      sx={{ bgcolor: "#5533A1", padding: {xs: 1, sm: 2}, width: { xs: "100%", sm: "auto" } }}
     >
       <Typography
         variant="h6"
@@ -43,6 +44,7 @@ function TournamentDetailCard({ heading, data }) {
         bgcolor: "transparent",
         border: "1px solid #5533A1",
         p: { xs: 2, md: 1, lg: 2 },
+        height: "100%",
       }}
     >
       <Typography
@@ -115,16 +117,23 @@ export default function NewTournamentCard({ tournament }) {
             </Stack>
           </Box>
           <Divider sx={{ border: "1px solid #5533A1" }} />
-          <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: {
+                xs: "repeat(2, 1fr)",
+                sm: "repeat(4, 1fr)",
+              },
+              gap: 1,
+            }}
+          >
             <TournamentDetailCard
               heading={"ENTRY/PLAYER"}
               data={tournament.entryFee ? tournament.entryFee : "FREE"}
             />
             <TournamentDetailCard
               heading={"TEAM SIZE"}
-              data={
-                tournament.membersPerTeam
-              }
+              data={tournament.membersPerTeam}
             />
             <TournamentDetailCard
               heading={"MAX TEAMS"}
@@ -134,14 +143,14 @@ export default function NewTournamentCard({ tournament }) {
               heading={"ENROLLED"}
               data={tournament.teams.length}
             />
-          </Stack>
+          </Box>
         </Stack>
         {/* actions */}
         <Box
           width={{ xs: "100%", sm: "100%", md: "25%" }}
           border="1px solid #5533A1"
-          paddingX={4}
-          paddingY={8}
+          paddingX={{xs:2, md:4}}
+          paddingY={{xs:4, md:8}}
         >
           <Typography
             color="yellow"
@@ -163,7 +172,7 @@ export default function NewTournamentCard({ tournament }) {
           <Button
             variant="contained"
             size="large"
-            sx={{ display: "block", margin: "0 auto", mb: 3 }}
+            sx={{ display: "block", margin: "0 auto" }}
           >
             <Link href={`/tournament/${encodeURIComponent(tournament._id)}`}>
               View Tournament
