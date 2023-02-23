@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="119.295mm" height="188.637mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 11921.07 18850.35"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M539.69 0l10841.69 0c296.83,0 539.69,242.86 539.69,539.69l0 17770.97c0,296.83 -242.86,539.69 -539.69,539.69l-10841.69 0c-296.83,0 -539.69,-242.86 -539.69,-539.69l0 -17770.97c0,-296.83 242.86,-539.69 539.69,-539.69z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M539.69 0l10841.69 0c296.83,0 539.69,242.86 539.69,539.69l0 17770.97c0,296.83 -242.86,539.69 -539.69,539.69l-10841.69 0c-296.83,0 -539.69,-242.86 -539.69,-539.69l0 -17770.97c0,-296.83 242.86,-539.69 539.69,-539.69z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M539.69 0l10841.69 0c296.83,0 539.69,242.86 539.69,539.69l0 17770.97c0,296.83 -242.86,539.69 -539.69,539.69l-10841.69 0c-296.83,0 -539.69,-242.86 -539.69,-539.69l0 -17770.97c0,-296.83 242.86,-539.69 539.69,-539.69z"/>
+    </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image x="-75.89" y="-40.22" width="15245.61" height="18930.8" xlink:href="CARD 02_Images\CARD 02_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+   </g>
+  </g>
+  <path class="fil0" d="M539.69 0l10841.69 0c296.83,0 539.69,242.86 539.69,539.69l0 17770.97c0,296.83 -242.86,539.69 -539.69,539.69l-10841.69 0c-296.83,0 -539.69,-242.86 -539.69,-539.69l0 -17770.97c0,-296.83 242.86,-539.69 539.69,-539.69z"/>
+ </g>
+</svg>
