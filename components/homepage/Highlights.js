@@ -122,7 +122,6 @@ export default function Highlights() {
       <section className={styles.highlightRev}>
         <div
           className={styles.highlightBg}
-          
           style={{
             backgroundImage: "url(/characters/highlight-char-6-bg.png)",
             backgroundRepeat: "no-repeat",
@@ -175,11 +174,11 @@ export default function Highlights() {
         </div>
         <div className={styles.highlightText}>
           <h3>
-            Visit Our <span>Shop</span>
+            Wallet And <span>Rewards</span>
           </h3>
           <p>
-            Visit our shop to buy game items and our new merchandise and enter
-            giveaways!
+            Play & Earn exciting rewards in the form of crypto , merchandise or
+            game items
           </p>
           <button className={styles.highlightButton}>COMPETE NOW</button>
         </div>
