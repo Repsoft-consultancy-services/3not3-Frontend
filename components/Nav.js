@@ -283,6 +283,11 @@ const Nav = () => {
                             Leaderboard
                           </Link>
                         </MenuItem>
+                        <MenuItem className={styles.vs} onClick={handleClose}>
+                          <li onClick={() => setIsFeedbackModalOpen(true)}>
+                            Send Feedback
+                          </li>
+                        </MenuItem>
                         {user !== null ? (
                           <MenuItem
                             sx={{
@@ -313,7 +318,10 @@ const Nav = () => {
           </div>
         </span>
       </nav>
-      <FeedbackModal open={isFeedbackModalOpen} setOpen={setIsFeedbackModalOpen} />
+      <FeedbackModal
+        open={isFeedbackModalOpen}
+        setOpen={setIsFeedbackModalOpen}
+      />
     </>
   );
 };

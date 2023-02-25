@@ -1,7 +1,8 @@
 .highlight,
 .highlightRev {
   position: relative;
-  overflow: hidden;
+  z-index: 1;
+  /* overflow: hidden; */
 }
 
 .highlight *,
@@ -56,6 +57,8 @@
 .highlightBg > img {
   display: block;
   max-width: 50%;
+  position: relative;
+  isolation: isolate;
 }
 
 .highlight .highlightBg > img {
