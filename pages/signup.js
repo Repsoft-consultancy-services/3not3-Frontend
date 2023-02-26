@@ -26,7 +26,9 @@ const signup = () => {
     passVisible === false ? setPassVisible(true) : setPassVisible(false);
   };
   const updateConfirmVisibility = () => {
-    passConfirmVisible === false ? setPassConfirmVisible(true) : setPassConfirmVisible(false);
+    passConfirmVisible === false
+      ? setPassConfirmVisible(true)
+      : setPassConfirmVisible(false);
   };
   const title = "signup | 3NOT3";
 
@@ -37,7 +39,7 @@ const signup = () => {
       return;
     }
     if (username.includes(" ")) {
-      toast.error("username should not contain spaces")
+      toast.error("username should not contain spaces");
       return;
     }
     if (mobile.length !== 10) {
@@ -53,11 +55,11 @@ const signup = () => {
       return;
     }
     if (email.includes(" ")) {
-      toast.error("email should not contain spaces")
+      toast.error("email should not contain spaces");
       return;
     }
     if (!email.includes("@") || !email.includes(".")) {
-      toast.error("Please enter a valid email")
+      toast.error("Please enter a valid email");
       return;
     }
     if (password.length < 8) {
@@ -92,6 +94,7 @@ const signup = () => {
 
           if (res.data.success === true) {
             toast.success("Successfully registered!");
+            toast.success("Verification Mail Sent Please Verify");
             localStorage.setItem("authToken", res.data.token);
             console.log("Auth token Saved");
             dispatch({
@@ -120,7 +123,7 @@ const signup = () => {
   const [gender, setgender] = useState("Gender");
   const [mobile, setmobile] = useState([]);
   const [DOB, setDOB] = useState([]);
-  const [DOBtodisplay, setDOBtodisplay] = useState([])
+  const [DOBtodisplay, setDOBtodisplay] = useState([]);
   const [pincode, setpincode] = useState([]);
   useEffect(() => {
     if (window.innerWidth < 600) {
@@ -218,7 +221,11 @@ const signup = () => {
               <BsTelephone />
             </label>
 
-            {isMobile && <center><p>Enter DOB</p></center>}
+            {isMobile && (
+              <center>
+                <p>Enter DOB</p>
+              </center>
+            )}
             <label htmlFor="userDOB">
               <input
                 type={isMobile ? "date" : "text"}
@@ -229,7 +236,9 @@ const signup = () => {
                   e.target.type = "text";
                   //check if date is valid
                   if (e.target.value.length === 10) {
-                    setDOBtodisplay(format(new Date(DOBtodisplay), "dd-MM-yyyy"));
+                    setDOBtodisplay(
+                      format(new Date(DOBtodisplay), "dd-MM-yyyy")
+                    );
                     if (new Date(DOB) > new Date()) {
                       toast.error("Please enter a valid date");
                       setDOB("");
