@@ -14,6 +14,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import { GiHamburgerMenu } from "react-icons/gi";
+import FeedbackModal from "../pages/FeedbackModal";
 
 const Nav = () => {
   const [{ user }, dispatch] = useStateValue();
@@ -85,7 +86,9 @@ const Nav = () => {
       //   sethaveteam(false);
       // }
     }
-  }, [])
+  }, []);
+
+  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
 
   return (
     <>
@@ -113,7 +116,10 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+            <Link
+              exact
+              href={logged ? (haveteam ? "/tournament" : "/teams") : "/signup"}
+            >
               <span>Tournaments</span>
             </Link>
           </li>
@@ -144,6 +150,7 @@ const Nav = () => {
               <span>Leaderboard</span>
             </Link>
           </li>
+          <li onClick={() => setIsFeedbackModalOpen(true)}>Send Feedback</li>
         </ul>
         <span className={styles.navbarButton}>
           {user === null ? (
@@ -244,7 +251,16 @@ const Nav = () => {
                           </Link>
                         </MenuItem>
                         <MenuItem className={styles.vs} onClick={handleClose}>
-                          <Link exact href={logged ? haveteam ? "/tournament" : "/teams" : "/signup"}>
+                          <Link
+                            exact
+                            href={
+                              logged
+                                ? haveteam
+                                  ? "/tournament"
+                                  : "/teams"
+                                : "/signup"
+                            }
+                          >
                             Tournaments
                           </Link>
                         </MenuItem>
@@ -266,6 +282,11 @@ const Nav = () => {
                           <Link exact href={"/leaderboard"}>
                             Leaderboard
                           </Link>
+                        </MenuItem>
+                        <MenuItem className={styles.vs} onClick={handleClose}>
+                          <li onClick={() => setIsFeedbackModalOpen(true)}>
+                            Send Feedback
+                          </li>
                         </MenuItem>
                         {user !== null ? (
                           <MenuItem
@@ -297,6 +318,10 @@ const Nav = () => {
           </div>
         </span>
       </nav>
+      <FeedbackModal
+        open={isFeedbackModalOpen}
+        setOpen={setIsFeedbackModalOpen}
+      />
     </>
   );
 };

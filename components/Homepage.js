@@ -18,12 +18,15 @@ import "aos/dist/aos.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import coin from "../assets/img/coin.svg";
-import card1 from "../assets/img/new1.svg";
-import card2 from "../assets/img/new2.svg";
-import card3 from "../assets/img/new3.svg";
-import card4 from "../assets/img/new4.svg";
-import card5 from "../assets/img/new5.svg";
-import card6 from "../assets/img/new6.svg";
+import card1 from "../assets/img/img1.jpeg";
+import card2 from "../assets/img/img2.jpeg";
+import card3 from "../assets/img/img3.jpeg";
+import card4 from "../assets/img/img4.jpeg";
+import card5 from "../assets/img/img5.jpeg";
+import card6 from "../assets/img/img6.jpeg";
+import card7 from "../assets/img/img7.jpeg";
+import card8 from "../assets/img/img8.jpeg";
+import card9 from "../assets/img/img9.jpeg";
 import background from "../assets/img/background1.svg";
 import {
   Dialog,
@@ -931,6 +934,42 @@ const Homepage = () => {
                 >
                   <div className={styles.sliderimg}>
                     <Image src={card6} layout="fill" alt="pubg" />
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslidecustom}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
+                  <div className={styles.sliderimg}>
+                    <Image src={card7} layout="fill" alt="pubg" />
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslidecustom}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
+                  <div className={styles.sliderimg}>
+                    <Image src={card8} layout="fill" alt="pubg" />
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslidecustom}>
+                <Link
+                  exact
+                  href={
+                    logged ? (haveteam ? "/tournament" : "/teams") : "/signup"
+                  }
+                >
+                  <div className={styles.sliderimg}>
+                    <Image src={card9} layout="fill" alt="pubg" />
                   </div>
                 </Link>
               </SwiperSlide>
