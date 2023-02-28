@@ -94,14 +94,16 @@ const signup = () => {
 
           if (res.data.success === true) {
             toast.success("Successfully registered!");
-            toast.success("Verification Mail Sent Please Verify");
+            toast.success("Verification Mail Sent Please Verify", {
+              onClose: () => Router.push("/login"),
+            });
             localStorage.setItem("authToken", res.data.token);
             console.log("Auth token Saved");
             dispatch({
               type: "SET_USER",
               user: res.data.user,
             });
-            Router.push("/login");
+            // Router.push("/login");
           } else {
             dispatch({
               type: "SET_USER",
