@@ -140,11 +140,11 @@ const Nav = () => {
           ) : (
             ""
           )}
-          <li>
+          {/* <li>
             <Link exact href="/futureInventory">
               <span>Future Inventory</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link exact href="/leaderboard">
               <span>Leaderboard</span>
@@ -245,11 +245,11 @@ const Nav = () => {
                             Home
                           </Link>
                         </MenuItem>
-                        <MenuItem className={styles.vs} onClick={handleClose}>
+                        {/* <MenuItem className={styles.vs} onClick={handleClose}>
                           <Link exact href={"/futureInventory"}>
                             FutureInventory
                           </Link>
-                        </MenuItem>
+                        </MenuItem> */}
                         <MenuItem className={styles.vs} onClick={handleClose}>
                           <Link
                             exact
