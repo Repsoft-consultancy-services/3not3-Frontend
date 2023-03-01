@@ -25,9 +25,9 @@ export const Footer = () => {
         <div className={styles.ifs1}>
           <hr />
           <p>
-            3not3 is new generations gaming platform. We are supporting new
-            level of competition for our users and surpass end user experiences.
-            lets, feel the competitiveness.
+            Oscorp Gaming is new generations gaming platform. We are supporting
+            new level of competition for our users and surpass end user
+            experiences. lets, feel the competitiveness.
           </p>
           <div className={styles.isocialIconsF1}>
             <Link exact href={"https://www.facebook.com/3not3esportsofficial"}>
@@ -62,7 +62,7 @@ export const Footer = () => {
               </a>
             </Link>
           </div>
-          <span>Copyright ® 2022 3NOT3 All rights Reserved</span>
+          <span>Copyright ® 2022 Oscorp Gaming All rights Reserved</span>
         </div>
         <div className={styles.ifs2}>
           {/* <hr />

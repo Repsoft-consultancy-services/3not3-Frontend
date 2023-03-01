@@ -62,7 +62,7 @@ export const HomepageFooter = () => {
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
           </div>
-          <span>Copyright ® 2022 3NOT3 All rights Reserved</span>
+          <span>Copyright ® 2022 Oscorp Gaming All rights Reserved</span>
           {/* <Link href="https://repsoft.in/" passHref={true}>
             <center>Designed & Developed by Repsoft</center>
           </Link> */}
