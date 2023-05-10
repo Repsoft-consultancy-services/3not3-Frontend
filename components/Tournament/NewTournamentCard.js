@@ -23,7 +23,11 @@ const getTotalPrizePool = (tournament) => {
 function TournamentTimeCard({ children }) {
   return (
     <Card
-      sx={{ bgcolor: "#5533A1", padding: {xs: 1, sm: 2}, width: { xs: "100%", sm: "auto" } }}
+      sx={{
+        bgcolor: "#5533A1",
+        padding: { xs: 1, sm: 2 },
+        width: { xs: "100%", sm: "auto" },
+      }}
     >
       <Typography
         variant="h6"
@@ -149,8 +153,8 @@ export default function NewTournamentCard({ tournament }) {
         <Box
           width={{ xs: "100%", sm: "100%", md: "25%" }}
           border="1px solid #5533A1"
-          paddingX={{xs:2, md:4}}
-          paddingY={{xs:4, md:8}}
+          paddingX={{ xs: 2, md: 4 }}
+          paddingY={{ xs: 4, md: 8 }}
         >
           <Typography
             color="yellow"
@@ -167,7 +171,7 @@ export default function NewTournamentCard({ tournament }) {
             fontFamily={"Oxanium"}
             gutterBottom
           >
-            {getTotalPrizePool(tournament)}
+            {getTotalPrizePool(tournament) ? getTotalPrizePool(tournament) : 0}
           </Typography>
           <Button
             variant="contained"

@@ -128,7 +128,7 @@ const teams = () => {
         setPreviewImage(reader.result);
         setOpenTeamLogo(false);
       };
-    } catch (e) { }
+    } catch (e) {}
   }, [imageSrc, croppedAreaPixels, rotation]);
   const ORIENTATION_TO_ANGLE = {
     3: 180,
@@ -285,6 +285,12 @@ const teams = () => {
               <option value="Clash Of Clans">Clash of clans</option>
               <option value="Call Of Duty Mobile">Call Of Duty Mobile</option>
               <option value="FreeFire">Free fire</option>
+              <option value="FreeFire">Counter strike global offensive</option>
+              <option value="FreeFire">Call Of Duty warzone 2</option>
+              <option value="FreeFire">PUGB PC version</option>
+              <option value="FreeFire">Apex legends</option>
+              <option value="FreeFire">Fortnite</option>
+              <option value="FreeFire">Rogue Company</option>
             </select>
             <br />
             <label htmlFor="ingameName">In-game Name</label>

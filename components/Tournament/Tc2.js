@@ -195,14 +195,14 @@ const Tc2 = () => {
                   {/* <p>SEP 02 Starting at 06:00 pm</p> */}
                   <span className={styles.tourneydetailpafeTitle}>
                     <h4>
-                      <Image
+                      {/* <Image
                         alt="gameIcon"
                         src={
                           "https://res.cloudinary.com/nakul-londhe/image/upload/v1650805269/kixhnkx2fudffanpt0le.png"
                         }
                         width={30}
                         height={20}
-                      />
+                      /> */}
                       {data.data.name}
                       <i
                         onClick={() => {
@@ -249,7 +249,9 @@ const Tc2 = () => {
                     <i className={styles.itrophy}>
                       <BsTrophyFill />
                     </i>
-                    {data.data.prizes.map((prize) => prize.prize).reduce((a, b) => parseInt(a) + parseInt(b))}
+                    {data.data.prizes
+                      .map((prize) => prize.prize)
+                      .reduce((a, b) => parseInt(a) + parseInt(b))}
                   </span>
                 </div>
                 <div>

@@ -279,8 +279,11 @@ const tournament = () => {
   const getTournaments = async (url) => {
     try {
       await axios.get(`${GET_TOURNAMNETS}`).then((res) => {
-        console.log(res.data.data[0]);
-        setTournaments(res.data.data);
+        setTournaments(
+          res.data.data.sort((a, b) => {
+            return new Date(b.createdAt) - new Date(a.createdAt);
+          })
+        );
         setLoading(false);
       });
     } catch (err) {

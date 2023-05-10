@@ -362,8 +362,8 @@ const Tc1 = () => {
                                 className={
                                   selectedteam === team._id
                                     ? styles.selectedTeamButton +
-                                    " " +
-                                    styles.selectedTeamButtonPrimary
+                                      " " +
+                                      styles.selectedTeamButtonPrimary
                                     : styles.selectedTeamButton
                                 }
                                 onClick={() => {
@@ -513,14 +513,14 @@ const Tc1 = () => {
                   {/* <p>SEP 02 Starting at 06:00 pm</p> */}
                   <span className={styles.tourneydetailpafeTitle}>
                     <h4>
-                      <Image
+                      {/* <Image
                         alt="gameIcon"
                         src={
                           "https://res.cloudinary.com/nakul-londhe/image/upload/v1650805269/kixhnkx2fudffanpt0le.png"
                         }
                         width={30}
                         height={20}
-                      />
+                      /> */}
                       {data.data.name}
                       <i
                         onClick={() => {
@@ -547,8 +547,8 @@ const Tc1 = () => {
                         </h6>
                       </div>
                       {data.data.status === "started" ||
-                        data.data.status === "waiting" ||
-                        data.data.status === "completed" ? (
+                      data.data.status === "waiting" ||
+                      data.data.status === "completed" ? (
                         <button disabled>
                           <i>
                             <BsPersonFill />
@@ -586,7 +586,9 @@ const Tc1 = () => {
                     <i className={styles.itrophy}>
                       <BsTrophyFill />
                     </i>
-                    {data.data.prizes.map((prize) => prize.prize).reduce((a, b) => parseInt(a) + parseInt(b))}
+                    {data.data.prizes
+                      .map((prize) => prize.prize)
+                      .reduce((a, b) => parseInt(a) + parseInt(b))}
                   </span>
                 </div>
                 <div>
@@ -657,8 +659,8 @@ const Tc1 = () => {
                 <span>{featured[tournament.id - 1]?.platform}</span> */}
                   {isMobile &&
                     (data.data.status === "started" ||
-                      data.data.status === "waiting" ||
-                      data.data.status === "completed" ? (
+                    data.data.status === "waiting" ||
+                    data.data.status === "completed" ? (
                       <button className={styles.mobilejoin} disabled>
                         <i>
                           <BsPersonFill />
@@ -737,15 +739,15 @@ const Tc1 = () => {
               )}
               <TabPanel value="4">
                 {data.data.status === "started" ||
-                  data.data.status === "completed" ? (
+                data.data.status === "completed" ? (
                   data.data.gameMode == "Battle Royale" ||
-                    data.data.gameMode == "BattleRoyale" ? (
+                  data.data.gameMode == "BattleRoyale" ? (
                     <Schedule
                       tid={paramURL.id}
                       registered={registered}
                       registeredTeam={registeredTeam}
                       status={data.data.status}
-                    // getData={getData}
+                      // getData={getData}
                     />
                   ) : (
                     <Chatter
