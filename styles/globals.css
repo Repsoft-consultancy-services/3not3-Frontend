@@ -9,6 +9,7 @@ body {
   font-family: "Oxanium", cursive;
   scroll-behavior: smooth;
   position: relative;
+  overflow-x: hidden;
 }
 /* width */
 ::-webkit-scrollbar {

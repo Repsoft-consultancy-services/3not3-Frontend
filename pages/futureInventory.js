@@ -36,12 +36,12 @@ const futureInventory = () => {
           <p>
             Professional gamers are among the best-paid and most highly rained
             sportspeople in the world. They require daily access to personal
-            trainers. Here, in 3not3 we are as pleased as punch for a new era
+            trainers. Here, in Oscorp Gaming we are as pleased as punch for a new era
             gaming under automation mechanics that help both the upright of
             e-sport infrastructure for players and organizer. Introducing
             striation for player monitor and asset service throw which team or
             service provider can easily communicate and arrange new feature and
-            service by exploring web-technology of 3not3.
+            service by exploring web-technology of Oscorp Gaming.
           </p>
         </section>
         <br />

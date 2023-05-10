@@ -19,12 +19,12 @@ export default function Highlights() {
             About <span>Us</span>
           </h3>
           <p>
-            Here, in 3not3 we are as pleased as punch for a new era gaming under
+            Here, in Oscorp Gaming we are as pleased as punch for a new era gaming under
             automation mechanics that help both the upright of e-sport
             infrastructure for players and organizer. Introducing striation for
             player monitor and asset service throw which team or service
             provider can easily communicate and arrange new feature and service
-            by exploring web-technology of 3not3.
+            by exploring web-technology of Oscorp Gaming.
           </p>
           <button className={styles.highlightButton}>KNOW MORE</button>
         </div>
