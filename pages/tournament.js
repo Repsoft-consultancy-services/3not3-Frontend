@@ -523,6 +523,7 @@ const tournament = () => {
                 border: "none",
                 outline: "none",
                 marginBottom: "1rem",
+                marginTop: "2rem",
                 fontSize: "1rem",
                 fontFamily: "Oxanium",
               }}

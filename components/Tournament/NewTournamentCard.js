@@ -48,7 +48,7 @@ function TournamentDetailCard({ heading, data }) {
         bgcolor: "transparent",
         border: "1px solid #5533A1",
         p: { xs: 2, md: 1, lg: 2 },
-        height: "100%",
+        // height: "100%",
       }}
     >
       <Typography

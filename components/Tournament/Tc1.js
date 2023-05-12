@@ -458,14 +458,14 @@ const Tc1 = () => {
                   {/* <p>SEP 02 Starting at 06:00 pm</p> */}
                   <span className={styles.tourneydetailpafeTitle}>
                     <h4>
-                      <Image
+                      {/* <Image
                         alt="gameIcon"
                         src={
                           "https://res.cloudinary.com/nakul-londhe/image/upload/v1650805269/kixhnkx2fudffanpt0le.png"
                         }
                         width={30}
                         height={20}
-                      />
+                      /> */}
                       {data.data.name}
                     </h4>
                     <section style={{ display: "flex", alignItems: "center" }}>
