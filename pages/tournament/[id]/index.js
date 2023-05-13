@@ -74,23 +74,23 @@ const eachTournament = () => {
   return <>{isLoading ? <p>Loading</p> : logged ? <Tc1 /> : <Tc2 />}</>;
 };
 
-export const getServerSideProps = async (context) => {
-  const res = await fetch(`${GET_TOURNAMENT_BY_ID}/${context.params.id}`);
-  // console.log(res);
+// export const getServerSideProps = async (context) => {
+//   const res = await fetch(`${GET_TOURNAMENT_BY_ID}/${context.params.id}`);
+//    console.log(res);
 
-  const tournament = await res.json();
-  if (!tournament.data) {
-    return {
-      // <-----------------does the trick here!!
-      notFound: true,
-    };
-  }
+//   const tournament = await res.json();
+//   if (!tournament.data) {
+//     return {
+//       // <-----------------does the trick here!!
+//       notFound: true,
+//     };
+//   }
 
-  return {
-    props: {
-      tournament,
-    },
-  };
-};
+//   return {
+//     props: {
+//       tournament,
+//     },
+//   };
+// };
 
 export default eachTournament;

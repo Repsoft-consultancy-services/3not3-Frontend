@@ -173,15 +173,15 @@ export default function NewTournamentCard({ tournament }) {
           >
             {getTotalPrizePool(tournament) ? getTotalPrizePool(tournament) : 0}
           </Typography>
-          <Button
-            variant="contained"
-            size="large"
-            sx={{ display: "block", margin: "0 auto" }}
-          >
-            <Link href={`/tournament/${encodeURIComponent(tournament._id)}`}>
+          <Link href={`/tournament/${encodeURIComponent(tournament._id)}`}>
+            <Button
+              variant="contained"
+              size="large"
+              sx={{ display: "block", margin: "0 auto" }}
+            >
               View Tournament
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </Box>
       </Stack>
     </Card>

@@ -284,6 +284,13 @@ const tournament = () => {
             return new Date(b.createdAt) - new Date(a.createdAt);
           })
         );
+        setSelectedTournaments(
+          res.data.data.filter((tournament) => {
+            return (
+              tournament.featured === true && tournament.status !== "completed"
+            );
+          })
+        );
         setLoading(false);
       });
     } catch (err) {
