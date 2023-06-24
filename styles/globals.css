@@ -250,6 +250,9 @@ button {
   margin: auto;
   padding: 25px;
 }
+.teamspagemargin {
+  margin-top: 2.5rem;
+}
 .maxwidth {
   max-width: 100vw !important;
   margin: auto;

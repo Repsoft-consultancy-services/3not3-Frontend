@@ -408,7 +408,7 @@ const Homepage = () => {
           autoPlay
           muted
           loop
-          playsinline
+          playsInline
           className={styles.homebackground1}
         >
           <source src="https://3not3-storage.s3.ap-south-1.amazonaws.com/Oscorp+Gaming+Teaser+for+web.webm" />

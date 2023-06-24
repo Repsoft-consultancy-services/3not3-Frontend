@@ -1,13 +1,6 @@
 import React from "react";
 import styles from "../../styles/TournamentDetails.module.css";
 const Prize = ({ prizes }) => {
-  if (prizes && prizes.length === 1 && prizes[0].prize === "") {
-    return (
-      <center>
-        <h2>No Prizes</h2>
-      </center>
-    );
-  }
   return (
     <div className={styles.prizeDist}>
       <div className={styles.prizeHeader}>

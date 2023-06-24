@@ -175,7 +175,7 @@ const teams = () => {
 
   // console.log(getTeamData);
   return (
-    <div className={"container"}>
+    <div className={"container teamspagemargin"}>
       <Dialog open={openTeamLogo} maxWidth={false}>
         <div className={styless.uploadProfilePic}>
           <span className={styless.boxTitle}>
