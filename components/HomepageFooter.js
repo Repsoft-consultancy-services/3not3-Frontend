@@ -7,7 +7,7 @@ import {
   AiFillTwitterCircle,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaFacebook, FaDiscord } from "react-icons/fa";
+import { FaFacebook, FaDiscord, FaTelegram } from "react-icons/fa";
 export const HomepageFooter = () => {
   return (
     <footer className={styles.webfooter}>
@@ -38,19 +38,24 @@ export const HomepageFooter = () => {
                 <AiFillYoutube />
               </a>
             </Link>
-            <Link exact href={"https://discord.gg/7Ae2C4n9tN"}>
+            <Link
+              exact
+              href={
+                "https://discord.com/channels/1113350985918726144/1116975398698360833"
+              }
+            >
               <a target="_blank">
                 <FaDiscord />
               </a>
             </Link>
-            <Link exact href={"https://twitter.com/3not3esports"}>
+            <Link exact href={"https://t.me/oscorpgaming"}>
               <a target="_blank">
-                <AiFillTwitterCircle />
+                <FaTelegram />
               </a>
             </Link>
             <Link
               exact
-              href={"https://www.instagram.com/3not3esportsofficial/"}
+              href={"https://instagram.com/oscorp.gaming?igshid=ZDdkNTZiNTM="}
             >
               <a target="_blank">
                 <AiFillInstagram />
